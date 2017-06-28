@@ -1,0 +1,4543 @@
+Model {
+  Name			  "uplink_8c4r"
+  Version		  8.7
+  MdlSubVersion		  1
+  SavedCharacterEncoding  "UTF-8"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.2420"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+  }
+  Description		  " DSP Builder Advanced Template for Template Design implementing ModelIP designs"
+  PreLoadFcn		  "% Run the setup script when the model is opened\nsetup_uplink_8c4r;"
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  InitFcn		  "% Run the setup script again just before the \n% model is run, so that any updates made\n% after opening"
+  " are applied. \nsetup_uplink_8c4r;\n%% DSPBuilder Start\nalt_dspbuilder_update_model(bdroot)\n%% DSPBuilder End\n"
+  LastSavedArchitecture	  "glnxa64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    1
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      2
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [0.0, 28.0, 1920.0, 1018.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		3
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[1]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1691.0, 834.0]
+	ZoomFactor		[0.53]
+	Offset			[0.0, 0.0]
+      }
+    }
+  }
+  Created		  "Mon May 16 15:21:05 2011"
+  Creator		  "mjervis"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "5g"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Thu Jun 22 18:43:19 2017"
+  RTWModifiedTimeStamp	  420057742
+  ModelVersionFormat	  "1.%<AutoIncrement:2420>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  on
+  ShowLineDimensions	  on
+  ShowPortDataTypes	  on
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  off
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    6
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "uplink_8c4r"
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "uplink_8c4r"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      ""
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSet {
+      $ObjectID		      7
+      Version		      "1.16.2"
+      Array {
+	Type			"Handle"
+	Dimension		9
+	Simulink.SolverCC {
+	  $ObjectID		  8
+	  Version		  "1.16.2"
+	  StartTime		  "0.0"
+	  StopTime		  "20000"
+	  AbsTol		  "auto"
+	  FixedStep		  "auto"
+	  InitialStep		  "auto"
+	  MaxNumMinSteps	  "-1"
+	  MaxOrder		  5
+	  ZcThreshold		  "auto"
+	  ConsecutiveZCsStepRelTol "10*128*eps"
+	  MaxConsecutiveZCs	  "1000"
+	  ExtrapolationOrder	  4
+	  NumberNewtonIterations  1
+	  MaxStep		  "auto"
+	  MinStep		  "auto"
+	  MaxConsecutiveMinStep	  "1"
+	  RelTol		  "1e-3"
+	  SolverMode		  "Auto"
+	  EnableConcurrentExecution off
+	  ConcurrentTasks	  off
+	  Solver		  "VariableStepDiscrete"
+	  SolverName		  "VariableStepDiscrete"
+	  SolverJacobianMethodControl "auto"
+	  ShapePreserveControl	  "DisableAll"
+	  ZeroCrossControl	  "UseLocalSettings"
+	  ZeroCrossAlgorithm	  "Nonadaptive"
+	  AlgebraicLoopSolver	  "TrustRegion"
+	  SolverInfoToggleStatus  off
+	  IsAutoAppliedInSIP	  off
+	  SolverResetMethod	  "Fast"
+	  PositivePriorityOrder	  off
+	  AutoInsertRateTranBlk	  off
+	  SampleTimeConstraint	  "Unconstrained"
+	  InsertRTBMode		  "Whenever possible"
+	}
+	Simulink.DataIOCC {
+	  $ObjectID		  9
+	  Version		  "1.16.2"
+	  Decimation		  "1"
+	  ExternalInput		  "[t, u]"
+	  FinalStateName	  "xFinal"
+	  InitialState		  "xInitial"
+	  LimitDataPoints	  on
+	  MaxDataPoints		  "1000"
+	  LoadExternalInput	  off
+	  LoadInitialState	  off
+	  SaveFinalState	  off
+	  SaveCompleteFinalSimState off
+	  SaveFormat		  "Array"
+	  SignalLoggingSaveFormat "ModelDataLogs"
+	  SaveOutput		  on
+	  SaveState		  off
+	  SignalLogging		  on
+	  DSMLogging		  on
+	  InspectSignalLogs	  off
+	  VisualizeSimOutput	  on
+	  StreamToWorkspace	  off
+	  StreamVariableName	  "streamout"
+	  SaveTime		  on
+	  ReturnWorkspaceOutputs  off
+	  StateSaveName		  "xout"
+	  TimeSaveName		  "tout"
+	  OutputSaveName	  "yout"
+	  SignalLoggingName	  "logsout"
+	  DSMLoggingName	  "dsmout"
+	  OutputOption		  "RefineOutputTimes"
+	  OutputTimes		  "[]"
+	  ReturnWorkspaceOutputsName "out"
+	  Refine		  "1"
+	  LoggingToFile		  off
+	  LoggingFileName	  "out.mat"
+	  LoggingIntervals	  "[-inf, inf]"
+	}
+	Simulink.OptimizationCC {
+	  $ObjectID		  10
+	  Version		  "1.16.2"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    7
+	    Cell		    "BooleansAsBitfields"
+	    Cell		    "PassReuseOutputArgsAs"
+	    Cell		    "PassReuseOutputArgsThreshold"
+	    Cell		    "ZeroExternalMemoryAtStartup"
+	    Cell		    "ZeroInternalMemoryAtStartup"
+	    Cell		    "OptimizeModelRefInitCode"
+	    Cell		    "NoFixptDivByZeroProtection"
+	    PropName		    "DisabledProps"
+	  }
+	  BlockReduction	  on
+	  BooleanDataType	  on
+	  ConditionallyExecuteInputs on
+	  DefaultParameterBehavior "Tunable"
+	  UseDivisionForNetSlopeComputation "off"
+	  UseFloatMulNetSlope	  off
+	  DefaultUnderspecifiedDataType	"double"
+	  UseSpecifiedMinMax	  off
+	  InlineInvariantSignals  off
+	  OptimizeBlockIOStorage  on
+	  BufferReuse		  on
+	  EnhancedBackFolding	  off
+	  CachingGlobalReferences off
+	  GlobalBufferReuse	  on
+	  StrengthReduction	  off
+	  ExpressionFolding	  on
+	  BooleansAsBitfields	  off
+	  BitfieldContainerType	  "uint_T"
+	  EnableMemcpy		  on
+	  MemcpyThreshold	  64
+	  PassReuseOutputArgsAs	  "Structure reference"
+	  PassReuseOutputArgsThreshold 12
+	  ExpressionDepthLimit	  2147483647
+	  LocalBlockOutputs	  on
+	  RollThreshold		  5
+	  StateBitsets		  off
+	  DataBitsets		  off
+	  ActiveStateOutputEnumStorageType "Native Integer"
+	  ZeroExternalMemoryAtStartup on
+	  ZeroInternalMemoryAtStartup on
+	  InitFltsAndDblsToZero	  off
+	  NoFixptDivByZeroProtection off
+	  EfficientFloat2IntCast  off
+	  EfficientMapNaN2IntZero on
+	  OptimizeModelRefInitCode off
+	  LifeSpan		  "inf"
+	  MaxStackSize		  "Inherit from target"
+	  BufferReusableBoundary  on
+	  SimCompilerOptimization "off"
+	  AccelVerboseBuild	  off
+	}
+	Simulink.DebuggingCC {
+	  $ObjectID		  11
+	  Version		  "1.16.2"
+	  RTPrefix		  "error"
+	  ConsistencyChecking	  "none"
+	  ArrayBoundsChecking	  "none"
+	  SignalInfNanChecking	  "none"
+	  SignalRangeChecking	  "none"
+	  ReadBeforeWriteMsg	  "UseLocalSettings"
+	  WriteAfterWriteMsg	  "UseLocalSettings"
+	  WriteAfterReadMsg	  "UseLocalSettings"
+	  AlgebraicLoopMsg	  "warning"
+	  ArtificialAlgebraicLoopMsg "warning"
+	  SaveWithDisabledLinksMsg "warning"
+	  SaveWithParameterizedLinksMsg	"warning"
+	  CheckSSInitialOutputMsg on
+	  UnderspecifiedInitializationDetection	"Classic"
+	  MergeDetectMultiDrivingBlocksExec "none"
+	  CheckExecutionContextPreStartOutputMsg off
+	  CheckExecutionContextRuntimeOutputMsg	off
+	  SignalResolutionControl "UseLocalSettings"
+	  BlockPriorityViolationMsg "warning"
+	  MinStepSizeMsg	  "warning"
+	  TimeAdjustmentMsg	  "none"
+	  MaxConsecutiveZCsMsg	  "error"
+	  MaskedZcDiagnostic	  "warning"
+	  IgnoredZcDiagnostic	  "warning"
+	  SolverPrmCheckMsg	  "warning"
+	  InheritedTsInSrcMsg	  "none"
+	  MultiTaskDSMMsg	  "error"
+	  MultiTaskCondExecSysMsg "error"
+	  MultiTaskRateTransMsg	  "error"
+	  SingleTaskRateTransMsg  "none"
+	  TasksWithSamePriorityMsg "warning"
+	  SigSpecEnsureSampleTimeMsg "warning"
+	  CheckMatrixSingularityMsg "none"
+	  IntegerOverflowMsg	  "none"
+	  Int32ToFloatConvMsg	  "warning"
+	  ParameterDowncastMsg	  "error"
+	  ParameterOverflowMsg	  "none"
+	  ParameterUnderflowMsg	  "none"
+	  ParameterPrecisionLossMsg "warning"
+	  ParameterTunabilityLossMsg "warning"
+	  FixptConstUnderflowMsg  "none"
+	  FixptConstOverflowMsg	  "none"
+	  FixptConstPrecisionLossMsg "none"
+	  UnderSpecifiedDataTypeMsg "none"
+	  UnnecessaryDatatypeConvMsg "none"
+	  VectorMatrixConversionMsg "none"
+	  InvalidFcnCallConnMsg	  "error"
+	  FcnCallInpInsideContextMsg "UseLocalSettings"
+	  SignalLabelMismatchMsg  "none"
+	  UnconnectedInputMsg	  "warning"
+	  UnconnectedOutputMsg	  "warning"
+	  UnconnectedLineMsg	  "warning"
+	  SFcnCompatibilityMsg	  "none"
+	  FrameProcessingCompatibilityMsg "error"
+	  UniqueDataStoreMsg	  "none"
+	  BusObjectLabelMismatch  "warning"
+	  RootOutportRequireBusObject "warning"
+	  AssertControl		  "UseLocalSettings"
+	  AllowSymbolicDim	  on
+	  ModelReferenceIOMsg	  "none"
+	  ModelReferenceMultiInstanceNormalModeStructChecksumCheck "error"
+	  ModelReferenceVersionMismatchMessage "none"
+	  ModelReferenceIOMismatchMessage "none"
+	  UnknownTsInhSupMsg	  "warning"
+	  ModelReferenceDataLoggingMessage "warning"
+	  ModelReferenceSymbolNameMessage "warning"
+	  ModelReferenceExtraNoncontSigs "error"
+	  StateNameClashWarn	  "warning"
+	  SimStateInterfaceChecksumMismatchMsg "warning"
+	  SimStateOlderReleaseMsg "error"
+	  InitInArrayFormatMsg	  "warning"
+	  StrictBusMsg		  "ErrorLevel1"
+	  BusNameAdapt		  "WarnAndRepair"
+	  NonBusSignalsTreatedAsBus "none"
+	  SymbolicDimMinMaxWarning "warning"
+	  LossOfSymbolicDimsSimulationWarning "warning"
+	  LossOfSymbolicDimsCodeGenerationWarning "error"
+	  BlockIODiagnostic	  "none"
+	  SFUnusedDataAndEventsDiag "warning"
+	  SFUnexpectedBacktrackingDiag "warning"
+	  SFInvalidInputDataAccessInChartInitDiag "warning"
+	  SFNoUnconditionalDefaultTransitionDiag "warning"
+	  SFTransitionOutsideNaturalParentDiag "warning"
+	  SFUnconditionalTransitionShadowingDiag "warning"
+	  SFUndirectedBroadcastEventsDiag "warning"
+	  SFTransitionActionBeforeConditionDiag	"warning"
+	  SFOutputUsedAsStateInMooreChartDiag "error"
+	  IntegerSaturationMsg	  "none"
+	  AllowedUnitSystems	  "all"
+	  UnitsInconsistencyMsg	  "warning"
+	  AllowAutomaticUnitConversions	on
+	}
+	Simulink.HardwareCC {
+	  $ObjectID		  12
+	  Version		  "1.16.2"
+	  ProdBitPerChar	  8
+	  ProdBitPerShort	  16
+	  ProdBitPerInt		  32
+	  ProdBitPerLong	  32
+	  ProdBitPerLongLong	  64
+	  ProdBitPerFloat	  32
+	  ProdBitPerDouble	  64
+	  ProdBitPerPointer	  32
+	  ProdLargestAtomicInteger "Char"
+	  ProdLargestAtomicFloat  "None"
+	  ProdIntDivRoundTo	  "Undefined"
+	  ProdEndianess		  "Unspecified"
+	  ProdWordSize		  32
+	  ProdShiftRightIntArith  on
+	  ProdLongLongMode	  off
+	  ProdHWDeviceType	  "32-bit Generic"
+	  TargetBitPerChar	  8
+	  TargetBitPerShort	  16
+	  TargetBitPerInt	  32
+	  TargetBitPerLong	  32
+	  TargetBitPerLongLong	  64
+	  TargetBitPerFloat	  32
+	  TargetBitPerDouble	  64
+	  TargetBitPerPointer	  32
+	  TargetLargestAtomicInteger "Char"
+	  TargetLargestAtomicFloat "None"
+	  TargetShiftRightIntArith on
+	  TargetLongLongMode	  off
+	  TargetIntDivRoundTo	  "Undefined"
+	  TargetEndianess	  "Unspecified"
+	  TargetWordSize	  32
+	  TargetPreprocMaxBitsSint 32
+	  TargetPreprocMaxBitsUint 32
+	  TargetHWDeviceType	  "Specified"
+	  TargetUnknown		  off
+	  ProdEqTarget		  on
+	  UseEmbeddedCoderFeatures on
+	  UseSimulinkCoderFeatures on
+	}
+	Simulink.ModelReferenceCC {
+	  $ObjectID		  13
+	  Version		  "1.16.2"
+	  UpdateModelReferenceTargets "IfOutOfDateOrStructuralChange"
+	  EnableRefExpFcnMdlSchedulingChecks on
+	  CheckModelReferenceTargetMessage "error"
+	  EnableParallelModelReferenceBuilds off
+	  ParallelModelReferenceErrorOnInvalidPool on
+	  ParallelModelReferenceMATLABWorkerInit "None"
+	  ModelReferenceNumInstancesAllowed "Multi"
+	  PropagateVarSize	  "Infer from blocks in model"
+	  ModelReferencePassRootInputsByReference on
+	  ModelReferenceMinAlgLoopOccurrences off
+	  PropagateSignalLabelsOutOfModel off
+	  SupportModelReferenceSimTargetCustomCode off
+	}
+	Simulink.SFSimCC {
+	  $ObjectID		  14
+	  Version		  "1.16.2"
+	  SFSimEcho		  on
+	  SimCtrlC		  on
+	  SimIntegrity		  on
+	  SimUseLocalCustomCode	  off
+	  SimParseCustomCode	  on
+	  SimBuildMode		  "sf_incremental_build"
+	  SimGenImportedTypeDefs  off
+	}
+	Simulink.RTWCC {
+	  $BackupClass		  "Simulink.RTWCC"
+	  $ObjectID		  15
+	  Version		  "1.16.2"
+	  Array {
+	    Type		    "Cell"
+	    Dimension		    6
+	    Cell		    "IncludeHyperlinkInReport"
+	    Cell		    "GenerateTraceInfo"
+	    Cell		    "GenerateTraceReport"
+	    Cell		    "GenerateTraceReportSl"
+	    Cell		    "GenerateTraceReportSf"
+	    Cell		    "GenerateTraceReportEml"
+	    PropName		    "DisabledProps"
+	  }
+	  SystemTargetFile	  "grt.tlc"
+	  HardwareBoard		  "None"
+	  TLCOptions		  ""
+	  GenCodeOnly		  off
+	  MakeCommand		  "make_rtw"
+	  GenerateMakefile	  on
+	  PackageGeneratedCodeAndArtifacts off
+	  TemplateMakefile	  "grt_default_tmf"
+	  PostCodeGenCommand	  ""
+	  Description		  ""
+	  GenerateReport	  off
+	  SaveLog		  off
+	  RTWVerbose		  on
+	  RetainRTWFile		  off
+	  ProfileTLC		  off
+	  TLCDebug		  off
+	  TLCCoverage		  off
+	  TLCAssert		  off
+	  RTWUseLocalCustomCode	  off
+	  RTWUseSimCustomCode	  off
+	  Toolchain		  "Automatically locate an installed toolchain"
+	  BuildConfiguration	  "Faster Builds"
+	  IncludeHyperlinkInReport off
+	  LaunchReport		  off
+	  PortableWordSizes	  off
+	  CreateSILPILBlock	  "None"
+	  CodeExecutionProfiling  off
+	  CodeExecutionProfileVariable "executionProfile"
+	  CodeProfilingSaveOptions "SummaryOnly"
+	  CodeProfilingInstrumentation off
+	  SILDebugging		  off
+	  TargetLang		  "C"
+	  IncludeBusHierarchyInRTWFileBlockHierarchyMap	off
+	  GenerateTraceInfo	  off
+	  GenerateTraceReport	  off
+	  GenerateTraceReportSl	  off
+	  GenerateTraceReportSf	  off
+	  GenerateTraceReportEml  off
+	  GenerateWebview	  off
+	  GenerateCodeMetricsReport off
+	  GenerateCodeReplacementReport	off
+	  GenerateMissedCodeReplacementReport off
+	  RTWCompilerOptimization "off"
+	  RTWCustomCompilerOptimizations ""
+	  CheckMdlBeforeBuild	  "Off"
+	  SharedConstantsCachingThreshold 1024
+	  Array {
+	    Type		    "Handle"
+	    Dimension		    2
+	    Simulink.CodeAppCC {
+	      $ObjectID		      16
+	      Version		      "1.16.2"
+	      Array {
+		Type			"Cell"
+		Dimension		19
+		Cell			"IgnoreCustomStorageClasses"
+		Cell			"IgnoreTestpoints"
+		Cell			"InsertBlockDesc"
+		Cell			"SFDataObjDesc"
+		Cell			"SimulinkDataObjDesc"
+		Cell			"DefineNamingRule"
+		Cell			"SignalNamingRule"
+		Cell			"ParamNamingRule"
+		Cell			"InlinedPrmAccess"
+		Cell			"CustomSymbolStr"
+		Cell			"CustomSymbolStrGlobalVar"
+		Cell			"CustomSymbolStrType"
+		Cell			"CustomSymbolStrField"
+		Cell			"CustomSymbolStrFcn"
+		Cell			"CustomSymbolStrFcnArg"
+		Cell			"CustomSymbolStrBlkIO"
+		Cell			"CustomSymbolStrTmpVar"
+		Cell			"CustomSymbolStrMacro"
+		Cell			"ReqsInCode"
+		PropName		"DisabledProps"
+	      }
+	      ForceParamTrailComments off
+	      GenerateComments	      on
+	      CommentStyle	      "Auto"
+	      IgnoreCustomStorageClasses on
+	      IgnoreTestpoints	      off
+	      IncHierarchyInIds	      off
+	      MaxIdLength	      31
+	      PreserveName	      off
+	      PreserveNameWithParent  off
+	      ShowEliminatedStatement off
+	      OperatorAnnotations     off
+	      IncAutoGenComments      off
+	      SimulinkDataObjDesc     off
+	      SFDataObjDesc	      off
+	      MATLABFcnDesc	      off
+	      IncDataTypeInIds	      off
+	      MangleLength	      1
+	      CustomSymbolStrGlobalVar "$R$N$M"
+	      CustomSymbolStrType     "$N$R$M_T"
+	      CustomSymbolStrField    "$N$M"
+	      CustomSymbolStrFcn      "$R$N$M$F"
+	      CustomSymbolStrFcnArg   "rt$I$N$M"
+	      CustomSymbolStrBlkIO    "rtb_$N$M"
+	      CustomSymbolStrTmpVar   "$N$M"
+	      CustomSymbolStrMacro    "$R$N$M"
+	      CustomSymbolStrUtil     "$N$C"
+	      DefineNamingRule	      "None"
+	      ParamNamingRule	      "None"
+	      SignalNamingRule	      "None"
+	      InsertBlockDesc	      off
+	      InsertPolySpaceComments off
+	      SimulinkBlockComments   on
+	      MATLABSourceComments    off
+	      EnableCustomComments    off
+	      InternalIdentifier      "Shortened"
+	      InlinedPrmAccess	      "Literals"
+	      ReqsInCode	      off
+	      UseSimReservedNames     off
+	    }
+	    Simulink.GRTTargetCC {
+	      $BackupClass	      "Simulink.TargetCC"
+	      $ObjectID		      17
+	      Version		      "1.16.2"
+	      Array {
+		Type			"Cell"
+		Dimension		15
+		Cell			"GeneratePreprocessorConditionals"
+		Cell			"IncludeMdlTerminateFcn"
+		Cell			"GenerateAllocFcn"
+		Cell			"SuppressErrorStatus"
+		Cell			"ERTCustomFileBanners"
+		Cell			"GenerateSampleERTMain"
+		Cell			"GenerateTestInterfaces"
+		Cell			"ModelStepFunctionPrototypeControlCompliant"
+		Cell			"CPPClassGenCompliant"
+		Cell			"SupportNonInlinedSFcns"
+		Cell			"PurelyIntegerCode"
+		Cell			"PortableWordSizes"
+		Cell			"SupportComplex"
+		Cell			"SupportAbsoluteTime"
+		Cell			"SupportContinuousTime"
+		PropName		"DisabledProps"
+	      }
+	      TargetFcnLib	      "ansi_tfl_table_tmw.mat"
+	      TargetLibSuffix	      ""
+	      GenFloatMathFcnCalls    "NOT IN USE"
+	      TargetLangStandard      "C89/C90 (ANSI)"
+	      CodeReplacementLibrary  "None"
+	      UtilityFuncGeneration   "Auto"
+	      ERTMultiwordTypeDef     "System defined"
+	      ERTMultiwordLength      256
+	      MultiwordLength	      2048
+	      GenerateFullHeader      on
+	      InferredTypesCompatibility off
+	      GenerateSampleERTMain   off
+	      GenerateTestInterfaces  off
+	      ModelReferenceCompliant on
+	      ParMdlRefBuildCompliant on
+	      CompOptLevelCompliant   on
+	      ConcurrentExecutionCompliant on
+	      IncludeMdlTerminateFcn  on
+	      GeneratePreprocessorConditionals "Disable all"
+	      CombineOutputUpdateFcns off
+	      CombineSignalStateStructs	off
+	      SuppressErrorStatus     off
+	      ERTFirstTimeCompliant   off
+	      IncludeFileDelimiter    "Auto"
+	      ERTCustomFileBanners    off
+	      SupportAbsoluteTime     on
+	      LogVarNameModifier      "rt_"
+	      MatFileLogging	      on
+	      MultiInstanceERTCode    off
+	      CodeInterfacePackaging  "Nonreusable function"
+	      SupportNonFinite	      on
+	      SupportComplex	      on
+	      PurelyIntegerCode	      off
+	      SupportContinuousTime   on
+	      SupportNonInlinedSFcns  on
+	      SupportVariableSizeSignals off
+	      ParenthesesLevel	      "Nominal"
+	      CastingMode	      "Nominal"
+	      MATLABClassNameForMDSCustomization "Simulink.SoftwareTarget.GRTCustomization"
+	      ModelStepFunctionPrototypeControlCompliant off
+	      CPPClassGenCompliant    on
+	      AutosarCompliant	      off
+	      GRTInterface	      on
+	      GenerateAllocFcn	      off
+	      UseToolchainInfoCompliant	on
+	      GenerateSharedConstants on
+	      UseMalloc		      off
+	      ExtMode		      off
+	      ExtModeStaticAlloc      off
+	      ExtModeTesting	      off
+	      ExtModeStaticAllocSize  1000000
+	      ExtModeTransport	      0
+	      ExtModeMexFile	      "ext_comm"
+	      ExtModeIntrfLevel	      "Level1"
+	      RTWCAPISignals	      off
+	      RTWCAPIParams	      off
+	      RTWCAPIStates	      off
+	      RTWCAPIRootIO	      off
+	      GenerateASAP2	      off
+	      MultiInstanceErrorCode  "Error"
+	    }
+	    PropName		    "Components"
+	  }
+	}
+	SlCovCC.ConfigComp {
+	  $ObjectID		  18
+	  Version		  "1.16.2"
+	  Description		  "Simulink Coverage Configuration Component"
+	  Name			  "Simulink Coverage"
+	  CovEnable		  off
+	  CovScope		  "EntireSystem"
+	  CovIncludeTopModel	  on
+	  RecordCoverage	  off
+	  CovPath		  "/"
+	  CovSaveName		  "covdata"
+	  CovMetricSettings	  "dw"
+	  CovNameIncrementing	  off
+	  CovHtmlReporting	  on
+	  CovForceBlockReductionOff on
+	  CovEnableCumulative	  on
+	  CovSaveCumulativeToWorkspaceVar on
+	  CovSaveSingleToWorkspaceVar on
+	  CovCumulativeVarName	  "covCumulativeData"
+	  CovCumulativeReport	  off
+	  CovSaveOutputData	  on
+	  CovOutputDir		  "slcov_output/$ModelName$"
+	  CovDataFileName	  "$ModelName$_cvdata"
+	  CovReportOnPause	  on
+	  CovModelRefEnable	  "Off"
+	  CovExternalEMLEnable	  off
+	  CovSFcnEnable		  off
+	  CovBoundaryAbsTol	  1e-05
+	  CovBoundaryRelTol	  0.01
+	  CovUseTimeInterval	  off
+	  CovStartTime		  0
+	  CovStopTime		  0
+	}
+	PropName		"Components"
+      }
+      Name		      "Configuration"
+      CurrentDlgPage	      "Diagnostics"
+      ConfigPrmDlgPosition     [ 342, 178, 1442, 933 ] 
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSet {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    7
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    19
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      ComplexToRealImag
+      Output		      "Real and imag"
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit via back propagation"
+      LockScale		      off
+      ConvertRealWorld	      "Real World Value (RWV)"
+      RndMeth		      "Zero"
+      SaturateOnIntegerOverflow	on
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Inport
+      Port		      "1"
+      OutputFunctionCall      off
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      LatchByDelayingOutsideSignal off
+      LatchInputForFeedbackSignals off
+      Interpolate	      on
+    }
+    Block {
+      BlockType		      Mux
+      Inputs		      "4"
+      DisplayOption	      "none"
+      UseBusObject	      off
+      BusObject		      "BusObject"
+      NonVirtualBus	      off
+    }
+    Block {
+      BlockType		      Outport
+      Port		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: auto"
+      LockScale		      off
+      BusOutputAsStruct	      off
+      Unit		      "inherit"
+      PortDimensions	      "-1"
+      VarSizeSig	      "Inherit"
+      SampleTime	      "-1"
+      SignalType	      "auto"
+      SamplingMode	      "auto"
+      SourceOfInitialOutputValue "Dialog"
+      OutputWhenDisabled      "held"
+      InitialOutput	      "[]"
+    }
+    Block {
+      BlockType		      Scope
+      DefaultConfigurationName "Simulink.scopes.TimeScopeBlockCfg"
+      NumInputPorts	      "1"
+      Floating		      off
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      GeneratePreprocessorConditionals off
+      TreatAsGroupedWhenPropagatingVariantConditions on
+      ContentPreviewEnabled   off
+      IsWebBlock	      off
+    }
+  }
+  System {
+    Name		    "uplink_8c4r"
+    Location		    [0, 28, 1920, 1046]
+    Open		    on
+    ModelBrowserVisibility  on
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A4"
+    PaperUnits		    "centimeters"
+    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "53"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "8318"
+    Block {
+      BlockType		      Reference
+      Name		      "AvalonMMSlaveSettings"
+      SID		      "4924"
+      Ports		      []
+      Position		      [1695, 415, 1917, 541]
+      ZOrder		      1812
+      BackgroundColor	      "[0.000000, 0.317647, 0.584314]"
+      ShowName		      off
+      LibraryVersion	      "1.163"
+      FontName		      "Sans Serif"
+      FontSize		      22
+      SourceBlock	      "DSPBABase/AvalonMMSlaveSettings"
+      SourceType	      "DSP Builder Advanced Blockset Avalon MM Slave Settings Block"
+      ContentPreviewEnabled   off
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      SID		      "8207"
+      Position		      [605, 812, 635, 848]
+      ZOrder		      2741
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      SID		      "8208"
+      Position		      [605, 892, 635, 928]
+      ZOrder		      2742
+      Value		      "0"
+      OutDataTypeStr	      "boolean"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Control"
+      SID		      "3"
+      Ports		      []
+      Position		      [1065, 400, 1430, 470]
+      ZOrder		      -3
+      ShowName		      off
+      LibraryVersion	      "1.163"
+      FontName		      "Sans Serif"
+      FontSize		      22
+      SourceBlock	      "DSPBABase/Control"
+      SourceType	      "DSP Builder Advanced Blockset Control Block"
+      generate		      on
+      language		      "VHDL"
+      destination	      "./rtl"
+      destination_gui	      "./rtl"
+      make_full_path	      off
+      path_is_relative	      on
+      autotestbench	      off
+      signaldepth	      "2"
+      coveragetestbench	      on
+      logs		      off
+      spacewidth	      "2"
+      spacenum		      "1"
+      addrwidth		      "11"
+      datawidth		      "32"
+      dataendian	      "Big Endian"
+      hierarchicalnames	      off
+      ramThresholdBits	      "-1"
+      distRamThresholdBits    "-1"
+      mlabThresholdBits	      "-1"
+      hardMultiplierThresholdLuts "-1"
+      version		      "20090407"
+      errorOnChanMismatch     "1"
+      errorOnGPIOMismatch     "0"
+      importModelsimResults   "0"
+      cycleAccurate	      off
+      reinterpretCastMult     off
+      paramFile		      "uplink_8c4r_params.xml"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Cplx2IQVec"
+      SID		      "8298"
+      Ports		      [1, 1]
+      Position		      [1895, 735, 1960, 765]
+      ZOrder		      2747
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"Cplx2IQVec"
+	Location		[0, 28, 1920, 1136]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"611"
+	Block {
+	  BlockType		  Inport
+	  Name			  "CplxIn"
+	  SID			  "8299"
+	  Position		  [20, 33, 50, 47]
+	  ZOrder		  2320
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  ComplexToRealImag
+	  Name			  "Complex to\nReal-Imag"
+	  SID			  "8300"
+	  Ports			  [1, 2]
+	  Position		  [105, 20, 135, 60]
+	  ZOrder		  2318
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "8301"
+	  Ports			  [2, 1]
+	  Position		  [205, 21, 210, 59]
+	  ZOrder		  2319
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IQOut"
+	  SID			  "8302"
+	  Position		  [260, 33, 290, 47]
+	  ZOrder		  2321
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Complex to\nReal-Imag"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "IQOut"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Complex to\nReal-Imag"
+	  SrcPort		  2
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "CplxIn"
+	  SrcPort		  1
+	  DstBlock		  "Complex to\nReal-Imag"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Cplx2IQVec1"
+      SID		      "8303"
+      Ports		      [1, 1]
+      Position		      [1895, 975, 1960, 1005]
+      ZOrder		      2748
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"Cplx2IQVec1"
+	Location		[0, 28, 1920, 1136]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"611"
+	Block {
+	  BlockType		  Inport
+	  Name			  "CplxIn"
+	  SID			  "8304"
+	  Position		  [20, 33, 50, 47]
+	  ZOrder		  2320
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  ComplexToRealImag
+	  Name			  "Complex to\nReal-Imag"
+	  SID			  "8305"
+	  Ports			  [1, 2]
+	  Position		  [105, 20, 135, 60]
+	  ZOrder		  2318
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "8306"
+	  Ports			  [2, 1]
+	  Position		  [205, 21, 210, 59]
+	  ZOrder		  2319
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IQOut"
+	  SID			  "8307"
+	  Position		  [260, 33, 290, 47]
+	  ZOrder		  2321
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "CplxIn"
+	  SrcPort		  1
+	  DstBlock		  "Complex to\nReal-Imag"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Complex to\nReal-Imag"
+	  SrcPort		  2
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "IQOut"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Complex to\nReal-Imag"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Cplx2IQVec2"
+      SID		      "8308"
+      Ports		      [1, 1]
+      Position		      [1895, 1215, 1960, 1245]
+      ZOrder		      2749
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"Cplx2IQVec2"
+	Location		[0, 28, 1920, 1136]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"611"
+	Block {
+	  BlockType		  Inport
+	  Name			  "CplxIn"
+	  SID			  "8309"
+	  Position		  [20, 33, 50, 47]
+	  ZOrder		  2320
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  ComplexToRealImag
+	  Name			  "Complex to\nReal-Imag"
+	  SID			  "8310"
+	  Ports			  [1, 2]
+	  Position		  [105, 20, 135, 60]
+	  ZOrder		  2318
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "8311"
+	  Ports			  [2, 1]
+	  Position		  [205, 21, 210, 59]
+	  ZOrder		  2319
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IQOut"
+	  SID			  "8312"
+	  Position		  [260, 33, 290, 47]
+	  ZOrder		  2321
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "Complex to\nReal-Imag"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "IQOut"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Complex to\nReal-Imag"
+	  SrcPort		  2
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "CplxIn"
+	  SrcPort		  1
+	  DstBlock		  "Complex to\nReal-Imag"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Cplx2IQVec3"
+      SID		      "8313"
+      Ports		      [1, 1]
+      Position		      [1895, 1455, 1960, 1485]
+      ZOrder		      2750
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"Cplx2IQVec3"
+	Location		[0, 28, 1920, 1136]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"611"
+	Block {
+	  BlockType		  Inport
+	  Name			  "CplxIn"
+	  SID			  "8314"
+	  Position		  [20, 33, 50, 47]
+	  ZOrder		  2320
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  ComplexToRealImag
+	  Name			  "Complex to\nReal-Imag"
+	  SID			  "8315"
+	  Ports			  [1, 2]
+	  Position		  [105, 20, 135, 60]
+	  ZOrder		  2318
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  SID			  "8316"
+	  Ports			  [2, 1]
+	  Position		  [205, 21, 210, 59]
+	  ZOrder		  2319
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "bar"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "IQOut"
+	  SID			  "8317"
+	  Position		  [260, 33, 290, 47]
+	  ZOrder		  2321
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "CplxIn"
+	  SrcPort		  1
+	  DstBlock		  "Complex to\nReal-Imag"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "Complex to\nReal-Imag"
+	  SrcPort		  2
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "IQOut"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "Complex to\nReal-Imag"
+	  SrcPort		  1
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      DataTypeConversion
+      Name		      "Data Type Conversion1"
+      SID		      "8209"
+      Position		      [1010, 893, 1085, 927]
+      ZOrder		      2736
+      ShowName		      off
+      FontName		      "Sans Serif"
+      FontSize		      16
+      OutDataTypeStr	      "uint8"
+      RndMeth		      "Floor"
+      SaturateOnIntegerOverflow	off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "EditParams"
+      SID		      "6"
+      Ports		      []
+      Position		      [1565, 408, 1664, 546]
+      ZOrder		      -6
+      BackgroundColor	      "[0.925490, 1.000000, 1.000000]"
+      ShowName		      off
+      LibraryVersion	      "1.163"
+      FontName		      "Sans Serif"
+      FontSize		      22
+      SourceBlock	      "DSPBABase/EditParams"
+      SourceType	      "DSP Builder Advanced Blockset Ignored Block"
+      ContentPreviewEnabled   off
+      version		      "20090407"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Repeating\nSequence\ndata"
+      SID		      "8211"
+      Ports		      [0, 1]
+      Position		      [595, 732, 640, 768]
+      ZOrder		      2737
+      LibraryVersion	      "1.386"
+      SourceBlock	      "simulink/Sources/Repeating\nSequence\nStair"
+      SourceType	      "Repeating Sequence Stair"
+      ContentPreviewEnabled   off
+      OutValues		      "DDC_Lineup_param.inputdata.'"
+      tsamp		      "1"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "fixdt(1,16,15)"
+      OutputDataTypeScalingMode	"Specify via dialog"
+      OutDataType	      "fixdt(1,16,15)"
+      ConRadixGroup	      "Best Precision: Vector-wise"
+      OutScaling	      "[]"
+      LockScale		      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Run Modelsim"
+      SID		      "8"
+      Ports		      []
+      Position		      [1472, 405, 1537, 467]
+      ZOrder		      -8
+      ShowName		      off
+      LibraryVersion	      "1.163"
+      FontName		      "Sans Serif"
+      FontSize		      22
+      SourceBlock	      "DSPBABase/Run Modelsim"
+      SourceType	      "DSP Builder Advanced Blockset Ignored Block"
+      ContentPreviewEnabled   off
+      version		      "20090407"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Run QuartusII "
+      SID		      "9"
+      Ports		      []
+      Position		      [1477, 501, 1537, 558]
+      ZOrder		      -9
+      ShowName		      off
+      LibraryVersion	      "1.163"
+      FontName		      "Sans Serif"
+      FontSize		      22
+      SourceBlock	      "DSPBABase/Quartus Prime"
+      SourceType	      "DSP Builder Advanced Blockset Ignored Block"
+      ContentPreviewEnabled   off
+      version		      "20090407"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope"
+      SID		      "8290"
+      Ports		      [3]
+      Position		      [2080, 711, 2210, 949]
+      ZOrder		      2743
+      ShowName		      off
+      ScopeSpecificationString "C++SS(StrPVP('Location','[349, 652, 925, 1052]'),StrPVP('Open','off'),MxPVP('AxesTitle"
+      "s',24,'struct(''axes1'',''%<SignalLabel>'',''axes2'',''%<SignalLabel>'',''axes3'',''%<SignalLabel>'')'),MxPVP('S"
+      "copeGraphics',28,'struct(''FigureColor'',''[0.5 0.5 0.5]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]"
+      "'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5"
+      " 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP"
+      "('YMin','-0.07811~-0.125~-0.875'),StrPVP('YMax','0.07433~1.125~7.875'),StrPVP('SaveToWorkspace','on'),StrPVP('Sa"
+      "veName','ScopeData_DDC1'),StrPVP('DataFormat','StructureWithTime'),StrPVP('LimitDataPoints','off'),StrPVP('Scrol"
+      "lMode','off'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
+      NumInputPorts	      "3"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope1"
+      SID		      "8291"
+      Ports		      [3]
+      Position		      [2080, 951, 2210, 1189]
+      ZOrder		      2744
+      ShowName		      off
+      ScopeSpecificationString "C++SS(StrPVP('Location','[672, 478, 2592, 1404]'),StrPVP('Open','off'),MxPVP('AxesTitl"
+      "es',24,'struct(''axes1'',''%<SignalLabel>'',''axes2'',''%<SignalLabel>'',''axes3'',''%<SignalLabel>'')'),MxPVP('"
+      "ScopeGraphics',28,'struct(''FigureColor'',''[0.5 0.5 0.5]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1"
+      "]'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0."
+      "5 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPV"
+      "P('YMin','-0.07879~-0.125~-0.875'),StrPVP('YMax','0.08047~1.125~7.875'),StrPVP('SaveToWorkspace','on'),StrPVP('S"
+      "aveName','ScopeData_DDC2'),StrPVP('DataFormat','StructureWithTime'),StrPVP('LimitDataPoints','off'),StrPVP('Scro"
+      "llMode','off'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
+      NumInputPorts	      "3"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope2"
+      SID		      "8292"
+      Ports		      [3]
+      Position		      [2080, 1191, 2210, 1429]
+      ZOrder		      2745
+      ShowName		      off
+      ScopeSpecificationString "C++SS(StrPVP('Location','[672, 478, 1248, 878]'),StrPVP('Open','off'),MxPVP('AxesTitle"
+      "s',24,'struct(''axes1'',''%<SignalLabel>'',''axes2'',''%<SignalLabel>'',''axes3'',''%<SignalLabel>'')'),MxPVP('S"
+      "copeGraphics',28,'struct(''FigureColor'',''[0.5 0.5 0.5]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]"
+      "'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5"
+      " 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP"
+      "('YMin','-0.07879~-0.125~-0.875'),StrPVP('YMax','0.08047~1.125~7.875'),StrPVP('SaveToWorkspace','on'),StrPVP('Sa"
+      "veName','ScopeData_DDC3'),StrPVP('DataFormat','StructureWithTime'),StrPVP('LimitDataPoints','off'),StrPVP('Scrol"
+      "lMode','off'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
+      NumInputPorts	      "3"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope3"
+      SID		      "8293"
+      Ports		      [3]
+      Position		      [2080, 1431, 2210, 1669]
+      ZOrder		      2746
+      ShowName		      off
+      ScopeSpecificationString "C++SS(StrPVP('Location','[672, 478, 1248, 878]'),StrPVP('Open','off'),MxPVP('AxesTitle"
+      "s',24,'struct(''axes1'',''%<SignalLabel>'',''axes2'',''%<SignalLabel>'',''axes3'',''%<SignalLabel>'')'),MxPVP('S"
+      "copeGraphics',28,'struct(''FigureColor'',''[0.5 0.5 0.5]'',''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]"
+      "'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5"
+      " 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|none|none|none|none'')'),StrPVP('ShowLegends','off'),StrPVP"
+      "('YMin','-0.07879~-0.125~-0.875'),StrPVP('YMax','0.08047~1.125~7.875'),StrPVP('SaveToWorkspace','on'),StrPVP('Sa"
+      "veName','ScopeData_DDC4'),StrPVP('DataFormat','StructureWithTime'),StrPVP('LimitDataPoints','off'),StrPVP('Scrol"
+      "lMode','off'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
+      NumInputPorts	      "3"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Signals"
+      SID		      "13"
+      Ports		      []
+      Position		      [1065, 500, 1426, 564]
+      ZOrder		      -13
+      ShowName		      off
+      LibraryVersion	      "1.163"
+      FontName		      "Sans Serif"
+      FontSize		      22
+      SourceBlock	      "DSPBABase/Signals"
+      SourceType	      "DSP Builder Advanced Blockset Signals Block"
+      ContentPreviewEnabled   off
+      clk		      "clk"
+      freq		      "DDC_Lineup_param.ClockRate"
+      margin		      "DDC_Lineup_param.ClockMargin"
+      rst		      "areset"
+      rstactive		      "High"
+      bus		      "bus"
+      enbusclock	      on
+      busfreq		      "61.44"
+      bussync		      on
+      version		      "20090407"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "dut_8c4r"
+      SID		      "15"
+      Ports		      [12, 12]
+      Position		      [1270, 693, 1755, 1687]
+      ZOrder		      -15
+      BackgroundColor	      "lightBlue"
+      FontName		      "Sans Serif"
+      FontSize		      16
+      RequestExecContextInheritance off
+      Variant		      off
+      System {
+	Name			"dut_8c4r"
+	Location		[0, 28, 1920, 1046]
+	Open			off
+	ModelBrowserVisibility	on
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"68"
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC1_in_data"
+	  SID			  "5160"
+	  Position		  [2710, 438, 2740, 452]
+	  ZOrder		  1649
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC1_in_valid"
+	  SID			  "5158"
+	  Position		  [2710, 528, 2740, 542]
+	  ZOrder		  1647
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC1_in_chan"
+	  SID			  "5159"
+	  Position		  [2710, 618, 2740, 632]
+	  ZOrder		  1648
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC2_in_data"
+	  SID			  "8230"
+	  Position		  [2710, 743, 2740, 757]
+	  ZOrder		  2224
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC2_in_valid"
+	  SID			  "8231"
+	  Position		  [2710, 833, 2740, 847]
+	  ZOrder		  2222
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC2_in_chan"
+	  SID			  "8232"
+	  Position		  [2710, 923, 2740, 937]
+	  ZOrder		  2223
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC3_in_data"
+	  SID			  "8248"
+	  Position		  [2710, 1048, 2740, 1062]
+	  ZOrder		  2231
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC3_in_valid"
+	  SID			  "8249"
+	  Position		  [2710, 1138, 2740, 1152]
+	  ZOrder		  2229
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC3_in_chan"
+	  SID			  "8250"
+	  Position		  [2710, 1228, 2740, 1242]
+	  ZOrder		  2230
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC4_in_data"
+	  SID			  "8266"
+	  Position		  [2710, 1353, 2740, 1367]
+	  ZOrder		  2238
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC4_in_valid"
+	  SID			  "8267"
+	  Position		  [2710, 1443, 2740, 1457]
+	  ZOrder		  2236
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "DDC4_in_chan"
+	  SID			  "8268"
+	  Position		  [2710, 1533, 2740, 1547]
+	  ZOrder		  2237
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Device"
+	  SID			  "7418"
+	  Ports			  []
+	  Position		  [2160, 470, 2374, 581]
+	  ZOrder		  1644
+	  BackgroundColor	  "[0.843137, 0.839216, 0.666667]"
+	  ShowName		  off
+	  LibraryVersion	  "1.163"
+	  SourceBlock		  "DSPBABase/Device"
+	  SourceType		  "DSP Builder Advanced Blockset Device Block"
+	  ContentPreviewEnabled	  off
+	  family		  "Arria 10"
+	  deviceMember		  "Arria 10"
+	  stratix4device	  "Stratix IV GX"
+	  hardcopy4device	  "HardCopy IV E"
+	  stratix5device	  "Stratix V GX"
+	  device		  "10AS066N2F40I1SGES"
+	  speed			  "1"
+	  stratixSpeed		  "-5"
+	  stratix2Speed		  "-3"
+	  stratix3Speed		  "-3"
+	  stratix4gxSpeed	  "-2"
+	  stratix4gtSpeed	  "-1"
+	  cyclone2Speed		  "-6"
+	  cyclone3Speed		  "-7"
+	  arria2Speed		  "-4"
+	  cyclone4eSpeed	  "-8"
+	  stratix5Speed		  "-3"
+	  arria5Speed		  "-4"
+	  arriaSpeed		  "-6"
+	  cyclone3lsSpeed	  "-7"
+	  cyclone5Speed		  "-6"
+	  arria2gzSpeed		  "-3"
+	  nightFurySpeed	  "-2"
+	  ecp2Speed		  "-7"
+	  hardcopycompat	  off
+	  version		  "20140217"
+	  max10flashmode	  "off"
+	  max10nomeminit	  off
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "dut_1r"
+	  SID			  "7523"
+	  Ports			  [3, 3]
+	  Position		  [2840, 403, 3040, 667]
+	  ZOrder		  2016
+	  BackgroundColor	  "lightBlue"
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  RequestExecContextInheritance	off
+	  Variant		  off
+	  System {
+	    Name		    "dut_1r"
+	    Location		    [0, 28, 1920, 1046]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "78"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Data"
+	      SID		      "7734"
+	      Position		      [690, 423, 720, 437]
+	      ZOrder		      2053
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Valid"
+	      SID		      "7732"
+	      Position		      [690, 528, 720, 542]
+	      ZOrder		      2055
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Chan"
+	      SID		      "7733"
+	      Position		      [700, 633, 730, 647]
+	      ZOrder		      2054
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "COMPLEX_MIXER1"
+	      SID		      "8284"
+	      Ports		      [3, 3]
+	      Position		      [1605, 377, 1835, 693]
+	      ZOrder		      2214
+	      ForegroundColor	      "blue"
+	      BackgroundColor	      "cyan"
+	      LibraryVersion	      "1.62"
+	      LinkData {
+		BlockName		"ComplexMixer"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"ComplexMixer_Scale"
+		DialogParameters {
+		  latency		  "3"
+		}
+		BlockName		"ComplexMixer_Scale1"
+		DialogParameters {
+		  latency		  "3"
+		}
+		BlockName		"Complex_NCO"
+		DialogParameters {
+		  latency		  "19"
+		}
+		BlockName		"Const2"
+		DialogParameters {
+		  otype			  "ufix(2)"
+		}
+		BlockName		"NCO Delay Matching/ChannelOut"
+		DialogParameters {
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Arial"
+	      SourceBlock	      "ddc_mixer_lib/COMPLEX_MIXER"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      CM_pipeline_stages      "2"
+	      CM_clock_margin	      "DDC_Lineup_param.ClockMargin"
+	      CM_NCO_sample_rate      "DDC_Lineup_param.Complex_NCO.SampleRate"
+	      CM_NCO_accumulator_bit_width "DDC_Lineup_param.Complex_NCO.Acumulater_bit_wid"
+	      CM_NCO_frequency_word   "DDC_Lineup_param.Complex_NCO_A1.Freq_word"
+	      CM_NCO_base_addr	      "DDC_Lineup_param.Complex_NCO_A1.base_addr"
+	      CM_NCO_data_type	      "DDC_Lineup_param.Complex_NCO.Data_type"
+	      CM_NCO_scaling_value    "DDC_Lineup_param.Complex_NCO.scaling_value"
+	      CM_sample_rate	      "DDC_Lineup_param.CM.SampleRate"
+	      CM_complex_channels     "DDC_Lineup_param.CM.No_Of_complex_chan"
+	      CM_complex_freq	      "DDC_Lineup_param.CM.No_Of_complex_Freq"
+	      CM_output_word_length   "DDC_Lineup_param.output_word_length"
+	      CM_output_fraction_length	"DDC_Lineup_param.output_fraction_length"
+	      CM_scale_multiplication_factor "DDC_CM_multiplication_factor"
+	      CM_scale_left_shift_factor "DDC_CM_Number_of_bits_to_shift_left"
+	      CM_NCO_phase	      "DDC_CM_NCO_phase"
+	      CM_NCO_sync	      "DDC_CM_NCO_sync"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "HDDC"
+	      SID		      "7504"
+	      Ports		      [3, 3]
+	      Position		      [1215, 377, 1455, 693]
+	      ZOrder		      2006
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.49"
+	      LinkData {
+		BlockName		"HB6/HB6Im_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB6/HB6Re_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB6/HB6_Im"
+		DialogParameters {
+		  latency		  "13"
+		}
+		BlockName		"HB6/HB6_Re"
+		DialogParameters {
+		  latency		  "13"
+		}
+		BlockName		"HB6/HB_4"
+		DialogParameters {
+		  latency		  "14"
+		}
+		BlockName		"HB6/HB_4_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB7/HB5_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB7/HB7Im_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB7/HB7Re_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB7/HB7_Im"
+		DialogParameters {
+		  latency		  "11"
+		}
+		BlockName		"HB7/HB7_Re"
+		DialogParameters {
+		  latency		  "11"
+		}
+		BlockName		"HB7/HB_5"
+		DialogParameters {
+		  latency		  "14"
+		}
+		BlockName		"PipeReg1/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg2/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg3/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg4/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      SourceBlock	      "hddc_lib/hddc"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	      HB7_filter_SampleRate   "DDC_Lineup_param.HB_filter7.SampleRate"
+	      HB7_filter_Decimation   "DDC_Lineup_param.HB_filter7.Decimation"
+	      HB7_filter_ChanCount    "DDC_Lineup_param.HB_filter7.ChanCount"
+	      HB7_filter_coeffs	      "DDC_Lineup_param.HB_filt7.coeffs(1,:)"
+	      HB7_filter_base_addr    "DDC_Lineup_param.HB_filter7.base_addr1"
+	      HB6_filter_SampleRate   "DDC_Lineup_param.HB_filter6.SampleRate"
+	      HB6_filter_Decimation   "DDC_Lineup_param.HB_filter6.Decimation"
+	      HB6_filter_ChanCount    "DDC_Lineup_param.HB_filter6.ChanCount"
+	      HB6_filter_coeffs	      "DDC_Lineup_param.HB_filt6.coeffs(1,:)"
+	      HB6_filter_base_addr    "DDC_Lineup_param.HB_filter6.base_addr1"
+	      output_word_length      "DDC_Lineup_param.output_word_length"
+	      output_fraction_length  "DDC_Lineup_param.output_fraction_length"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "LDDC"
+	      SID		      "7509"
+	      Ports		      [3, 3]
+	      Position		      [1935, 379, 2180, 691]
+	      ZOrder		      2008
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.26"
+	      LinkData {
+		BlockName		"Chan_Filter/chan_filter"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filterIm"
+		DialogParameters {
+		  latency		  "22"
+		}
+		BlockName		"Chan_Filter/chan_filterIm_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filterRe"
+		DialogParameters {
+		  latency		  "22"
+		}
+		BlockName		"Chan_Filter/chan_filterRe_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filter_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB4/HB4Im"
+		DialogParameters {
+		  latency		  "21"
+		}
+		BlockName		"HB4/HB4Re"
+		DialogParameters {
+		  latency		  "21"
+		}
+		BlockName		"HB4/HB_4"
+		DialogParameters {
+		  latency		  "29"
+		}
+		BlockName		"HB4/HB_4_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB4/scale_HB4Im"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB4/scale_HB4Re"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB5/HB5Im"
+		DialogParameters {
+		  latency		  "20"
+		}
+		BlockName		"HB5/HB5Re"
+		DialogParameters {
+		  latency		  "20"
+		}
+		BlockName		"HB5/HB5_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB5/HB_5"
+		DialogParameters {
+		  latency		  "25"
+		}
+		BlockName		"HB5/scale_HB5Im"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB5/scale_HB5Re"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"PipeReg1/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg2/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg3/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg4/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg5/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg6/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      SourceBlock	      "lddc_lib/lddc"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      HB5_filter_SampleRate   "DDC_Lineup_param.HB_filter5.SampleRate"
+	      HB5_filter_Decimation   "DDC_Lineup_param.HB_filter5.Decimation"
+	      HB5_filter_ChanCount    "DDC_Lineup_param.HB_filter5.ChanCount"
+	      HB5_filter_coeffs	      "DDC_Lineup_param.HB_filt5.coeffs(1,:)"
+	      HB5_filter_base_addr    "DDC_Lineup_param.HB_filter5.base_addr1"
+	      HB4_filter_SampleRate   "DDC_Lineup_param.HB_filter4.SampleRate"
+	      HB4_filter_Decimation   "DDC_Lineup_param.HB_filter4.Decimation"
+	      HB4_filter_ChanCount    "DDC_Lineup_param.HB_filter4.ChanCount"
+	      HB4_filter_coeffs	      "DDC_Lineup_param.HB_filt4.coeffs(1,:)"
+	      HB4_filter_base_addr    "DDC_Lineup_param.HB_filter4.base_addr1"
+	      CH_filter_SampleRate    "DDC_Lineup_param.CH_filter.SampleRate"
+	      CH_filter_ChanCount     "DDC_Lineup_param.CH_filter.ChanCount"
+	      CH_filter_coeffs	      "DDC_Lineup_param.chan_filter.coeffs(1,:)"
+	      CH_filter_base_addr     "DDC_Lineup_param.CH_filter.base_addr1"
+	      output_word_length      "DDC_Lineup_param.output_word_length"
+	      output_fraction_length  "DDC_Lineup_param.output_fraction_length"
+	      Pipeline_stages	      "2"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "PipeReg"
+	      SID		      "8176"
+	      Ports		      [3, 3]
+	      Position		      [895, 374, 1105, 696]
+	      ZOrder		      2208
+	      LibraryVersion	      "1.80"
+	      LinkData {
+		BlockName		"ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "6"
+		}
+	      }
+	      SourceBlock	      "pipereg_lib/PipeReg"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      NPipe		      "6"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "PipeReg1"
+	      SID		      "8180"
+	      Ports		      [3, 3]
+	      Position		      [2385, 375, 2595, 695]
+	      ZOrder		      2212
+	      LibraryVersion	      "1.80"
+	      LinkData {
+		BlockName		"ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "6"
+		}
+	      }
+	      SourceBlock	      "pipereg_lib/PipeReg"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      NPipe		      "6"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_data"
+	      SID		      "7527"
+	      Position		      [2745, 423, 2775, 437]
+	      ZOrder		      2015
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_valid"
+	      SID		      "7528"
+	      Position		      [2740, 528, 2770, 542]
+	      ZOrder		      2016
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_Chan"
+	      SID		      "7529"
+	      Position		      [2740, 633, 2770, 647]
+	      ZOrder		      2017
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      46
+	      SrcBlock		      "DDC_In_Valid"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      47
+	      SrcBlock		      "DDC_In_Chan"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      55
+	      SrcBlock		      "DDC_In_Data"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      57
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      1
+	      DstBlock		      "DDC_Out_data"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      60
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      2
+	      DstBlock		      "DDC_Out_valid"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      63
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      3
+	      DstBlock		      "DDC_Out_Chan"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      79
+	      SrcBlock		      "LDDC"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      80
+	      SrcBlock		      "LDDC"
+	      SrcPort		      2
+	      DstBlock		      "PipeReg1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      81
+	      SrcBlock		      "LDDC"
+	      SrcPort		      3
+	      DstBlock		      "PipeReg1"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      83
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      2
+	      DstBlock		      "HDDC"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      84
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      3
+	      DstBlock		      "HDDC"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      85
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      1
+	      DstBlock		      "HDDC"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      98
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      1
+	      DstBlock		      "LDDC"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      99
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      2
+	      DstBlock		      "LDDC"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      100
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      3
+	      DstBlock		      "LDDC"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      101
+	      SrcBlock		      "HDDC"
+	      SrcPort		      1
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      102
+	      SrcBlock		      "HDDC"
+	      SrcPort		      2
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      103
+	      SrcBlock		      "HDDC"
+	      SrcPort		      3
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      3
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "dut_2r"
+	  SID			  "8233"
+	  Ports			  [3, 3]
+	  Position		  [2840, 708, 3040, 972]
+	  ZOrder		  2228
+	  BackgroundColor	  "lightBlue"
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  RequestExecContextInheritance	off
+	  Variant		  off
+	  System {
+	    Name		    "dut_2r"
+	    Location		    [0, 28, 1920, 1046]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "88"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Data"
+	      SID		      "8234"
+	      Position		      [785, 423, 815, 437]
+	      ZOrder		      2053
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Valid"
+	      SID		      "8235"
+	      Position		      [785, 528, 815, 542]
+	      ZOrder		      2055
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Chan"
+	      SID		      "8236"
+	      Position		      [795, 633, 825, 647]
+	      ZOrder		      2054
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "COMPLEX_MIXER1"
+	      SID		      "8287"
+	      Ports		      [3, 3]
+	      Position		      [1610, 377, 1840, 693]
+	      ZOrder		      2215
+	      ForegroundColor	      "blue"
+	      BackgroundColor	      "cyan"
+	      LibraryVersion	      "1.62"
+	      LinkData {
+		BlockName		"ComplexMixer"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"ComplexMixer_Scale"
+		DialogParameters {
+		  latency		  "3"
+		}
+		BlockName		"ComplexMixer_Scale1"
+		DialogParameters {
+		  latency		  "3"
+		}
+		BlockName		"Complex_NCO"
+		DialogParameters {
+		  latency		  "19"
+		}
+		BlockName		"Const2"
+		DialogParameters {
+		  otype			  "ufix(2)"
+		}
+		BlockName		"NCO Delay Matching/ChannelOut"
+		DialogParameters {
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Arial"
+	      SourceBlock	      "ddc_mixer_lib/COMPLEX_MIXER"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      CM_pipeline_stages      "2"
+	      CM_clock_margin	      "DDC_Lineup_param.ClockMargin"
+	      CM_NCO_sample_rate      "DDC_Lineup_param.Complex_NCO.SampleRate"
+	      CM_NCO_accumulator_bit_width "DDC_Lineup_param.Complex_NCO.Acumulater_bit_wid"
+	      CM_NCO_frequency_word   "DDC_Lineup_param.Complex_NCO_A2.Freq_word"
+	      CM_NCO_base_addr	      "DDC_Lineup_param.Complex_NCO_A2.base_addr"
+	      CM_NCO_data_type	      "DDC_Lineup_param.Complex_NCO.Data_type"
+	      CM_NCO_scaling_value    "DDC_Lineup_param.Complex_NCO.scaling_value"
+	      CM_sample_rate	      "DDC_Lineup_param.CM.SampleRate"
+	      CM_complex_channels     "DDC_Lineup_param.CM.No_Of_complex_chan"
+	      CM_complex_freq	      "DDC_Lineup_param.CM.No_Of_complex_Freq"
+	      CM_output_word_length   "DDC_Lineup_param.output_word_length"
+	      CM_output_fraction_length	"DDC_Lineup_param.output_fraction_length"
+	      CM_scale_multiplication_factor "DDC_CM_multiplication_factor"
+	      CM_scale_left_shift_factor "DDC_CM_Number_of_bits_to_shift_left"
+	      CM_NCO_phase	      "DDC_CM_NCO_phase"
+	      CM_NCO_sync	      "DDC_CM_NCO_sync"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "HDDC"
+	      SID		      "8238"
+	      Ports		      [3, 3]
+	      Position		      [1310, 377, 1550, 693]
+	      ZOrder		      2006
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.49"
+	      LinkData {
+		BlockName		"HB6/HB6Im_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB6/HB6Re_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB6/HB6_Im"
+		DialogParameters {
+		  latency		  "13"
+		}
+		BlockName		"HB6/HB6_Re"
+		DialogParameters {
+		  latency		  "13"
+		}
+		BlockName		"HB6/HB_4"
+		DialogParameters {
+		  latency		  "14"
+		}
+		BlockName		"HB6/HB_4_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB7/HB5_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB7/HB7Im_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB7/HB7Re_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB7/HB7_Im"
+		DialogParameters {
+		  latency		  "11"
+		}
+		BlockName		"HB7/HB7_Re"
+		DialogParameters {
+		  latency		  "11"
+		}
+		BlockName		"HB7/HB_5"
+		DialogParameters {
+		  latency		  "14"
+		}
+		BlockName		"PipeReg1/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg2/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg3/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg4/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      SourceBlock	      "hddc_lib/hddc"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	      HB7_filter_SampleRate   "DDC_Lineup_param.HB_filter7.SampleRate"
+	      HB7_filter_Decimation   "DDC_Lineup_param.HB_filter7.Decimation"
+	      HB7_filter_ChanCount    "DDC_Lineup_param.HB_filter7.ChanCount"
+	      HB7_filter_coeffs	      "DDC_Lineup_param.HB_filt7.coeffs(1,:)"
+	      HB7_filter_base_addr    "DDC_Lineup_param.HB_filter7.base_addr2"
+	      HB6_filter_SampleRate   "DDC_Lineup_param.HB_filter6.SampleRate"
+	      HB6_filter_Decimation   "DDC_Lineup_param.HB_filter6.Decimation"
+	      HB6_filter_ChanCount    "DDC_Lineup_param.HB_filter6.ChanCount"
+	      HB6_filter_coeffs	      "DDC_Lineup_param.HB_filt6.coeffs(1,:)"
+	      HB6_filter_base_addr    "DDC_Lineup_param.HB_filter6.base_addr2"
+	      output_word_length      "DDC_Lineup_param.output_word_length"
+	      output_fraction_length  "DDC_Lineup_param.output_fraction_length"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "LDDC"
+	      SID		      "8239"
+	      Ports		      [3, 3]
+	      Position		      [1935, 379, 2180, 691]
+	      ZOrder		      2008
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.26"
+	      LinkData {
+		BlockName		"Chan_Filter/chan_filter"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filterIm"
+		DialogParameters {
+		  latency		  "22"
+		}
+		BlockName		"Chan_Filter/chan_filterIm_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filterRe"
+		DialogParameters {
+		  latency		  "22"
+		}
+		BlockName		"Chan_Filter/chan_filterRe_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filter_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB4/HB4Im"
+		DialogParameters {
+		  latency		  "21"
+		}
+		BlockName		"HB4/HB4Re"
+		DialogParameters {
+		  latency		  "21"
+		}
+		BlockName		"HB4/HB_4"
+		DialogParameters {
+		  latency		  "29"
+		}
+		BlockName		"HB4/HB_4_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB4/scale_HB4Im"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB4/scale_HB4Re"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB5/HB5Im"
+		DialogParameters {
+		  latency		  "20"
+		}
+		BlockName		"HB5/HB5Re"
+		DialogParameters {
+		  latency		  "20"
+		}
+		BlockName		"HB5/HB5_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB5/HB_5"
+		DialogParameters {
+		  latency		  "25"
+		}
+		BlockName		"HB5/scale_HB5Im"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB5/scale_HB5Re"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"PipeReg1/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg2/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg3/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg4/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg5/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg6/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      SourceBlock	      "lddc_lib/lddc"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      HB5_filter_SampleRate   "DDC_Lineup_param.HB_filter5.SampleRate"
+	      HB5_filter_Decimation   "DDC_Lineup_param.HB_filter5.Decimation"
+	      HB5_filter_ChanCount    "DDC_Lineup_param.HB_filter5.ChanCount"
+	      HB5_filter_coeffs	      "DDC_Lineup_param.HB_filt5.coeffs(1,:)"
+	      HB5_filter_base_addr    "DDC_Lineup_param.HB_filter5.base_addr2"
+	      HB4_filter_SampleRate   "DDC_Lineup_param.HB_filter4.SampleRate"
+	      HB4_filter_Decimation   "DDC_Lineup_param.HB_filter4.Decimation"
+	      HB4_filter_ChanCount    "DDC_Lineup_param.HB_filter4.ChanCount"
+	      HB4_filter_coeffs	      "DDC_Lineup_param.HB_filt4.coeffs(1,:)"
+	      HB4_filter_base_addr    "DDC_Lineup_param.HB_filter4.base_addr2"
+	      CH_filter_SampleRate    "DDC_Lineup_param.CH_filter.SampleRate"
+	      CH_filter_ChanCount     "DDC_Lineup_param.CH_filter.ChanCount"
+	      CH_filter_coeffs	      "DDC_Lineup_param.chan_filter.coeffs(1,:)"
+	      CH_filter_base_addr     "DDC_Lineup_param.CH_filter.base_addr2"
+	      output_word_length      "DDC_Lineup_param.output_word_length"
+	      output_fraction_length  "DDC_Lineup_param.output_fraction_length"
+	      Pipeline_stages	      "2"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "PipeReg"
+	      SID		      "8240"
+	      Ports		      [3, 3]
+	      Position		      [990, 374, 1200, 696]
+	      ZOrder		      2208
+	      LibraryVersion	      "1.80"
+	      LinkData {
+		BlockName		"ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "6"
+		}
+	      }
+	      SourceBlock	      "pipereg_lib/PipeReg"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      NPipe		      "6"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "PipeReg1"
+	      SID		      "8241"
+	      Ports		      [3, 3]
+	      Position		      [2240, 375, 2450, 695]
+	      ZOrder		      2212
+	      LibraryVersion	      "1.80"
+	      LinkData {
+		BlockName		"ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "6"
+		}
+	      }
+	      SourceBlock	      "pipereg_lib/PipeReg"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      NPipe		      "6"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_data"
+	      SID		      "8242"
+	      Position		      [2600, 423, 2630, 437]
+	      ZOrder		      2015
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_valid"
+	      SID		      "8243"
+	      Position		      [2595, 528, 2625, 542]
+	      ZOrder		      2016
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_Chan"
+	      SID		      "8244"
+	      Position		      [2595, 633, 2625, 647]
+	      ZOrder		      2017
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "DDC_In_Valid"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "DDC_In_Chan"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "DDC_In_Data"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      1
+	      DstBlock		      "DDC_Out_data"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      2
+	      DstBlock		      "DDC_Out_valid"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      3
+	      DstBlock		      "DDC_Out_Chan"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "HDDC"
+	      SrcPort		      1
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "HDDC"
+	      SrcPort		      2
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      21
+	      SrcBlock		      "HDDC"
+	      SrcPort		      3
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      22
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      1
+	      DstBlock		      "LDDC"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      23
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      2
+	      DstBlock		      "LDDC"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      24
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      3
+	      DstBlock		      "LDDC"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      13
+	      SrcBlock		      "LDDC"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "LDDC"
+	      SrcPort		      2
+	      DstBlock		      "PipeReg1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      15
+	      SrcBlock		      "LDDC"
+	      SrcPort		      3
+	      DstBlock		      "PipeReg1"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      16
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      2
+	      DstBlock		      "HDDC"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      17
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      3
+	      DstBlock		      "HDDC"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      1
+	      DstBlock		      "HDDC"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "dut_3r"
+	  SID			  "8251"
+	  Ports			  [3, 3]
+	  Position		  [2840, 1013, 3040, 1277]
+	  ZOrder		  2235
+	  BackgroundColor	  "lightBlue"
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  RequestExecContextInheritance	off
+	  Variant		  off
+	  System {
+	    Name		    "dut_3r"
+	    Location		    [0, 28, 1920, 1046]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "60"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Data"
+	      SID		      "8252"
+	      Position		      [785, 423, 815, 437]
+	      ZOrder		      2053
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Valid"
+	      SID		      "8253"
+	      Position		      [785, 528, 815, 542]
+	      ZOrder		      2055
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Chan"
+	      SID		      "8254"
+	      Position		      [795, 633, 825, 647]
+	      ZOrder		      2054
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "COMPLEX_MIXER1"
+	      SID		      "8288"
+	      Ports		      [3, 3]
+	      Position		      [1605, 377, 1835, 693]
+	      ZOrder		      2216
+	      ForegroundColor	      "blue"
+	      BackgroundColor	      "cyan"
+	      LibraryVersion	      "1.62"
+	      LinkData {
+		BlockName		"ComplexMixer"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"ComplexMixer_Scale"
+		DialogParameters {
+		  latency		  "3"
+		}
+		BlockName		"ComplexMixer_Scale1"
+		DialogParameters {
+		  latency		  "3"
+		}
+		BlockName		"Complex_NCO"
+		DialogParameters {
+		  latency		  "19"
+		}
+		BlockName		"Const2"
+		DialogParameters {
+		  scale			  "1"
+		  otype			  "ufix(2)"
+		}
+		BlockName		"NCO Delay Matching/ChannelOut"
+		DialogParameters {
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Arial"
+	      SourceBlock	      "ddc_mixer_lib/COMPLEX_MIXER"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      CM_pipeline_stages      "2"
+	      CM_clock_margin	      "DDC_Lineup_param.ClockMargin"
+	      CM_NCO_sample_rate      "DDC_Lineup_param.Complex_NCO.SampleRate"
+	      CM_NCO_accumulator_bit_width "DDC_Lineup_param.Complex_NCO.Acumulater_bit_wid"
+	      CM_NCO_frequency_word   "DDC_Lineup_param.Complex_NCO_A3.Freq_word"
+	      CM_NCO_base_addr	      "DDC_Lineup_param.Complex_NCO_A3.base_addr"
+	      CM_NCO_data_type	      "DDC_Lineup_param.Complex_NCO.Data_type"
+	      CM_NCO_scaling_value    "DDC_Lineup_param.Complex_NCO.scaling_value"
+	      CM_sample_rate	      "DDC_Lineup_param.CM.SampleRate"
+	      CM_complex_channels     "DDC_Lineup_param.CM.No_Of_complex_chan"
+	      CM_complex_freq	      "DDC_Lineup_param.CM.No_Of_complex_Freq"
+	      CM_output_word_length   "DDC_Lineup_param.output_word_length"
+	      CM_output_fraction_length	"DDC_Lineup_param.output_fraction_length"
+	      CM_scale_multiplication_factor "DDC_CM_multiplication_factor"
+	      CM_scale_left_shift_factor "DDC_CM_Number_of_bits_to_shift_left"
+	      CM_NCO_phase	      "DDC_CM_NCO_phase"
+	      CM_NCO_sync	      "DDC_CM_NCO_sync"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "HDDC"
+	      SID		      "8256"
+	      Ports		      [3, 3]
+	      Position		      [1310, 377, 1550, 693]
+	      ZOrder		      2006
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.49"
+	      LinkData {
+		BlockName		"HB6/HB6Im_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB6/HB6Re_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB6/HB6_Im"
+		DialogParameters {
+		  latency		  "13"
+		}
+		BlockName		"HB6/HB6_Re"
+		DialogParameters {
+		  latency		  "13"
+		}
+		BlockName		"HB6/HB_4"
+		DialogParameters {
+		  latency		  "14"
+		}
+		BlockName		"HB6/HB_4_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB7/HB5_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB7/HB7Im_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB7/HB7Re_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB7/HB7_Im"
+		DialogParameters {
+		  latency		  "11"
+		}
+		BlockName		"HB7/HB7_Re"
+		DialogParameters {
+		  latency		  "11"
+		}
+		BlockName		"HB7/HB_5"
+		DialogParameters {
+		  latency		  "14"
+		}
+		BlockName		"PipeReg1/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg2/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg3/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg4/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      SourceBlock	      "hddc_lib/hddc"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	      HB7_filter_SampleRate   "DDC_Lineup_param.HB_filter7.SampleRate"
+	      HB7_filter_Decimation   "DDC_Lineup_param.HB_filter7.Decimation"
+	      HB7_filter_ChanCount    "DDC_Lineup_param.HB_filter7.ChanCount"
+	      HB7_filter_coeffs	      "DDC_Lineup_param.HB_filt7.coeffs(1,:)"
+	      HB7_filter_base_addr    "DDC_Lineup_param.HB_filter7.base_addr3"
+	      HB6_filter_SampleRate   "DDC_Lineup_param.HB_filter6.SampleRate"
+	      HB6_filter_Decimation   "DDC_Lineup_param.HB_filter6.Decimation"
+	      HB6_filter_ChanCount    "DDC_Lineup_param.HB_filter6.ChanCount"
+	      HB6_filter_coeffs	      "DDC_Lineup_param.HB_filt6.coeffs(1,:)"
+	      HB6_filter_base_addr    "DDC_Lineup_param.HB_filter6.base_addr3"
+	      output_word_length      "DDC_Lineup_param.output_word_length"
+	      output_fraction_length  "DDC_Lineup_param.output_fraction_length"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "LDDC"
+	      SID		      "8257"
+	      Ports		      [3, 3]
+	      Position		      [1935, 379, 2180, 691]
+	      ZOrder		      2008
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.26"
+	      LinkData {
+		BlockName		"Chan_Filter/chan_filter"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filterIm"
+		DialogParameters {
+		  latency		  "22"
+		}
+		BlockName		"Chan_Filter/chan_filterIm_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filterRe"
+		DialogParameters {
+		  latency		  "22"
+		}
+		BlockName		"Chan_Filter/chan_filterRe_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filter_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB4/HB4Im"
+		DialogParameters {
+		  latency		  "21"
+		}
+		BlockName		"HB4/HB4Re"
+		DialogParameters {
+		  latency		  "21"
+		}
+		BlockName		"HB4/HB_4"
+		DialogParameters {
+		  latency		  "29"
+		}
+		BlockName		"HB4/HB_4_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB4/scale_HB4Im"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB4/scale_HB4Re"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB5/HB5Im"
+		DialogParameters {
+		  latency		  "20"
+		}
+		BlockName		"HB5/HB5Re"
+		DialogParameters {
+		  latency		  "20"
+		}
+		BlockName		"HB5/HB5_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB5/HB_5"
+		DialogParameters {
+		  latency		  "25"
+		}
+		BlockName		"HB5/scale_HB5Im"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB5/scale_HB5Re"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"PipeReg1/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg2/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg3/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg4/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg5/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg6/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      SourceBlock	      "lddc_lib/lddc"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      HB5_filter_SampleRate   "DDC_Lineup_param.HB_filter5.SampleRate"
+	      HB5_filter_Decimation   "DDC_Lineup_param.HB_filter5.Decimation"
+	      HB5_filter_ChanCount    "DDC_Lineup_param.HB_filter5.ChanCount"
+	      HB5_filter_coeffs	      "DDC_Lineup_param.HB_filt5.coeffs(1,:)"
+	      HB5_filter_base_addr    "DDC_Lineup_param.HB_filter5.base_addr3"
+	      HB4_filter_SampleRate   "DDC_Lineup_param.HB_filter4.SampleRate"
+	      HB4_filter_Decimation   "DDC_Lineup_param.HB_filter4.Decimation"
+	      HB4_filter_ChanCount    "DDC_Lineup_param.HB_filter4.ChanCount"
+	      HB4_filter_coeffs	      "DDC_Lineup_param.HB_filt4.coeffs(1,:)"
+	      HB4_filter_base_addr    "DDC_Lineup_param.HB_filter4.base_addr3"
+	      CH_filter_SampleRate    "DDC_Lineup_param.CH_filter.SampleRate"
+	      CH_filter_ChanCount     "DDC_Lineup_param.CH_filter.ChanCount"
+	      CH_filter_coeffs	      "DDC_Lineup_param.chan_filter.coeffs(1,:)"
+	      CH_filter_base_addr     "DDC_Lineup_param.CH_filter.base_addr3"
+	      output_word_length      "DDC_Lineup_param.output_word_length"
+	      output_fraction_length  "DDC_Lineup_param.output_fraction_length"
+	      Pipeline_stages	      "2"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "PipeReg"
+	      SID		      "8258"
+	      Ports		      [3, 3]
+	      Position		      [990, 374, 1200, 696]
+	      ZOrder		      2208
+	      LibraryVersion	      "1.80"
+	      LinkData {
+		BlockName		"ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "6"
+		}
+	      }
+	      SourceBlock	      "pipereg_lib/PipeReg"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      NPipe		      "6"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "PipeReg1"
+	      SID		      "8259"
+	      Ports		      [3, 3]
+	      Position		      [2240, 375, 2450, 695]
+	      ZOrder		      2212
+	      LibraryVersion	      "1.80"
+	      LinkData {
+		BlockName		"ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "6"
+		}
+	      }
+	      SourceBlock	      "pipereg_lib/PipeReg"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      NPipe		      "6"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_data"
+	      SID		      "8260"
+	      Position		      [2600, 423, 2630, 437]
+	      ZOrder		      2015
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_valid"
+	      SID		      "8261"
+	      Position		      [2595, 528, 2625, 542]
+	      ZOrder		      2016
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_Chan"
+	      SID		      "8262"
+	      Position		      [2595, 633, 2625, 647]
+	      ZOrder		      2017
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "DDC_In_Valid"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "DDC_In_Chan"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "DDC_In_Data"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      1
+	      DstBlock		      "DDC_Out_data"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      2
+	      DstBlock		      "DDC_Out_valid"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      3
+	      DstBlock		      "DDC_Out_Chan"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      22
+	      SrcBlock		      "HDDC"
+	      SrcPort		      1
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      23
+	      SrcBlock		      "HDDC"
+	      SrcPort		      2
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      24
+	      SrcBlock		      "HDDC"
+	      SrcPort		      3
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      1
+	      DstBlock		      "LDDC"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      2
+	      DstBlock		      "LDDC"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      21
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      3
+	      DstBlock		      "LDDC"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      13
+	      SrcBlock		      "LDDC"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "LDDC"
+	      SrcPort		      2
+	      DstBlock		      "PipeReg1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      15
+	      SrcBlock		      "LDDC"
+	      SrcPort		      3
+	      DstBlock		      "PipeReg1"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      16
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      2
+	      DstBlock		      "HDDC"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      17
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      3
+	      DstBlock		      "HDDC"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      1
+	      DstBlock		      "HDDC"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "dut_4r"
+	  SID			  "8269"
+	  Ports			  [3, 3]
+	  Position		  [2840, 1318, 3040, 1582]
+	  ZOrder		  2242
+	  BackgroundColor	  "lightBlue"
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  RequestExecContextInheritance	off
+	  Variant		  off
+	  System {
+	    Name		    "dut_4r"
+	    Location		    [0, 28, 1920, 1046]
+	    Open		    off
+	    ModelBrowserVisibility  on
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "usletter"
+	    PaperUnits		    "inches"
+	    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "60"
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Data"
+	      SID		      "8270"
+	      Position		      [785, 423, 815, 437]
+	      ZOrder		      2053
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Valid"
+	      SID		      "8271"
+	      Position		      [785, 528, 815, 542]
+	      ZOrder		      2055
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Inport
+	      Name		      "DDC_In_Chan"
+	      SID		      "8272"
+	      Position		      [795, 633, 825, 647]
+	      ZOrder		      2054
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "COMPLEX_MIXER1"
+	      SID		      "8289"
+	      Ports		      [3, 3]
+	      Position		      [1610, 377, 1840, 693]
+	      ZOrder		      2216
+	      ForegroundColor	      "blue"
+	      BackgroundColor	      "cyan"
+	      LibraryVersion	      "1.62"
+	      LinkData {
+		BlockName		"ComplexMixer"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"ComplexMixer_Scale"
+		DialogParameters {
+		  latency		  "3"
+		}
+		BlockName		"ComplexMixer_Scale1"
+		DialogParameters {
+		  latency		  "3"
+		}
+		BlockName		"Complex_NCO"
+		DialogParameters {
+		  latency		  "19"
+		}
+		BlockName		"Const2"
+		DialogParameters {
+		  otype			  "ufix(2)"
+		}
+		BlockName		"NCO Delay Matching/ChannelOut"
+		DialogParameters {
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Arial"
+	      SourceBlock	      "ddc_mixer_lib/COMPLEX_MIXER"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      CM_pipeline_stages      "2"
+	      CM_clock_margin	      "DDC_Lineup_param.ClockMargin"
+	      CM_NCO_sample_rate      "DDC_Lineup_param.Complex_NCO.SampleRate"
+	      CM_NCO_accumulator_bit_width "DDC_Lineup_param.Complex_NCO.Acumulater_bit_wid"
+	      CM_NCO_frequency_word   "DDC_Lineup_param.Complex_NCO_A4.Freq_word"
+	      CM_NCO_base_addr	      "DDC_Lineup_param.Complex_NCO_A4.base_addr"
+	      CM_NCO_data_type	      "DDC_Lineup_param.Complex_NCO.Data_type"
+	      CM_NCO_scaling_value    "DDC_Lineup_param.Complex_NCO.scaling_value"
+	      CM_sample_rate	      "DDC_Lineup_param.CM.SampleRate"
+	      CM_complex_channels     "DDC_Lineup_param.CM.No_Of_complex_chan"
+	      CM_complex_freq	      "DDC_Lineup_param.CM.No_Of_complex_Freq"
+	      CM_output_word_length   "DDC_Lineup_param.output_word_length"
+	      CM_output_fraction_length	"DDC_Lineup_param.output_fraction_length"
+	      CM_scale_multiplication_factor "DDC_CM_multiplication_factor"
+	      CM_scale_left_shift_factor "DDC_CM_Number_of_bits_to_shift_left"
+	      CM_NCO_phase	      "DDC_CM_NCO_phase"
+	      CM_NCO_sync	      "DDC_CM_NCO_sync"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "HDDC"
+	      SID		      "8274"
+	      Ports		      [3, 3]
+	      Position		      [1310, 377, 1550, 693]
+	      ZOrder		      2006
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.49"
+	      LinkData {
+		BlockName		"HB6/HB6Im_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB6/HB6Re_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB6/HB6_Im"
+		DialogParameters {
+		  latency		  "13"
+		}
+		BlockName		"HB6/HB6_Re"
+		DialogParameters {
+		  latency		  "13"
+		}
+		BlockName		"HB6/HB_4"
+		DialogParameters {
+		  latency		  "14"
+		}
+		BlockName		"HB6/HB_4_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB7/HB5_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB7/HB7Im_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB7/HB7Re_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB7/HB7_Im"
+		DialogParameters {
+		  latency		  "11"
+		}
+		BlockName		"HB7/HB7_Re"
+		DialogParameters {
+		  latency		  "11"
+		}
+		BlockName		"HB7/HB_5"
+		DialogParameters {
+		  latency		  "14"
+		}
+		BlockName		"PipeReg1/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg2/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg3/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg4/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      SourceBlock	      "hddc_lib/hddc"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	      HB7_filter_SampleRate   "DDC_Lineup_param.HB_filter7.SampleRate"
+	      HB7_filter_Decimation   "DDC_Lineup_param.HB_filter7.Decimation"
+	      HB7_filter_ChanCount    "DDC_Lineup_param.HB_filter7.ChanCount"
+	      HB7_filter_coeffs	      "DDC_Lineup_param.HB_filt7.coeffs(1,:)"
+	      HB7_filter_base_addr    "DDC_Lineup_param.HB_filter7.base_addr4"
+	      HB6_filter_SampleRate   "DDC_Lineup_param.HB_filter6.SampleRate"
+	      HB6_filter_Decimation   "DDC_Lineup_param.HB_filter6.Decimation"
+	      HB6_filter_ChanCount    "DDC_Lineup_param.HB_filter6.ChanCount"
+	      HB6_filter_coeffs	      "DDC_Lineup_param.HB_filt6.coeffs(1,:)"
+	      HB6_filter_base_addr    "DDC_Lineup_param.HB_filter6.base_addr4"
+	      output_word_length      "DDC_Lineup_param.output_word_length"
+	      output_fraction_length  "DDC_Lineup_param.output_fraction_length"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "LDDC"
+	      SID		      "8275"
+	      Ports		      [3, 3]
+	      Position		      [1935, 379, 2180, 691]
+	      ZOrder		      2008
+	      BackgroundColor	      "lightBlue"
+	      LibraryVersion	      "1.26"
+	      LinkData {
+		BlockName		"Chan_Filter/chan_filter"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filterIm"
+		DialogParameters {
+		  latency		  "22"
+		}
+		BlockName		"Chan_Filter/chan_filterIm_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filterRe"
+		DialogParameters {
+		  latency		  "22"
+		}
+		BlockName		"Chan_Filter/chan_filterRe_Scale"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"Chan_Filter/chan_filter_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB4/HB4Im"
+		DialogParameters {
+		  latency		  "21"
+		}
+		BlockName		"HB4/HB4Re"
+		DialogParameters {
+		  latency		  "21"
+		}
+		BlockName		"HB4/HB_4"
+		DialogParameters {
+		  latency		  "29"
+		}
+		BlockName		"HB4/HB_4_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB4/scale_HB4Im"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB4/scale_HB4Re"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB5/HB5Im"
+		DialogParameters {
+		  latency		  "20"
+		}
+		BlockName		"HB5/HB5Re"
+		DialogParameters {
+		  latency		  "20"
+		}
+		BlockName		"HB5/HB5_Scale"
+		DialogParameters {
+		  latency		  "6"
+		}
+		BlockName		"HB5/HB_5"
+		DialogParameters {
+		  latency		  "25"
+		}
+		BlockName		"HB5/scale_HB5Im"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"HB5/scale_HB5Re"
+		DialogParameters {
+		  latency		  "4"
+		}
+		BlockName		"PipeReg1/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg2/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg3/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg4/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg5/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+		BlockName		"PipeReg6/ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "2"
+		}
+	      }
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      SourceBlock	      "lddc_lib/lddc"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      HB5_filter_SampleRate   "DDC_Lineup_param.HB_filter5.SampleRate"
+	      HB5_filter_Decimation   "DDC_Lineup_param.HB_filter5.Decimation"
+	      HB5_filter_ChanCount    "DDC_Lineup_param.HB_filter5.ChanCount"
+	      HB5_filter_coeffs	      "DDC_Lineup_param.HB_filt5.coeffs(1,:)"
+	      HB5_filter_base_addr    "DDC_Lineup_param.HB_filter5.base_addr4"
+	      HB4_filter_SampleRate   "DDC_Lineup_param.HB_filter4.SampleRate"
+	      HB4_filter_Decimation   "DDC_Lineup_param.HB_filter4.Decimation"
+	      HB4_filter_ChanCount    "DDC_Lineup_param.HB_filter4.ChanCount"
+	      HB4_filter_coeffs	      "DDC_Lineup_param.HB_filt4.coeffs(1,:)"
+	      HB4_filter_base_addr    "DDC_Lineup_param.HB_filter4.base_addr4"
+	      CH_filter_SampleRate    "DDC_Lineup_param.CH_filter.SampleRate"
+	      CH_filter_ChanCount     "DDC_Lineup_param.CH_filter.ChanCount"
+	      CH_filter_coeffs	      "DDC_Lineup_param.chan_filter.coeffs(1,:)"
+	      CH_filter_base_addr     "DDC_Lineup_param.CH_filter.base_addr4"
+	      output_word_length      "DDC_Lineup_param.output_word_length"
+	      output_fraction_length  "DDC_Lineup_param.output_fraction_length"
+	      Pipeline_stages	      "2"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "PipeReg"
+	      SID		      "8276"
+	      Ports		      [3, 3]
+	      Position		      [990, 374, 1200, 696]
+	      ZOrder		      2208
+	      LibraryVersion	      "1.80"
+	      LinkData {
+		BlockName		"ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "6"
+		}
+	      }
+	      SourceBlock	      "pipereg_lib/PipeReg"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      NPipe		      "6"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Reference
+	      Name		      "PipeReg1"
+	      SID		      "8277"
+	      Ports		      [3, 3]
+	      Position		      [2240, 375, 2450, 695]
+	      ZOrder		      2212
+	      LibraryVersion	      "1.80"
+	      LinkData {
+		BlockName		"ChannelOut"
+		DialogParameters {
+		  value			  "1"
+		  packetBeginEnabled	  "off"
+		  latency		  "6"
+		}
+	      }
+	      SourceBlock	      "pipereg_lib/PipeReg"
+	      SourceType	      ""
+	      ContentPreviewEnabled   off
+	      NPipe		      "6"
+	      Clock_Margin	      "DDC_Lineup_param.ClockMargin"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_data"
+	      SID		      "8278"
+	      Position		      [2600, 423, 2630, 437]
+	      ZOrder		      2015
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_valid"
+	      SID		      "8279"
+	      Position		      [2595, 528, 2625, 542]
+	      ZOrder		      2016
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      Port		      "2"
+	      IconDisplay	      "Port number"
+	    }
+	    Block {
+	      BlockType		      Outport
+	      Name		      "DDC_Out_Chan"
+	      SID		      "8280"
+	      Position		      [2595, 633, 2625, 647]
+	      ZOrder		      2017
+	      FontName		      "Sans Serif"
+	      FontSize		      12
+	      Port		      "3"
+	      IconDisplay	      "Port number"
+	    }
+	    Line {
+	      ZOrder		      1
+	      SrcBlock		      "DDC_In_Valid"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      2
+	      SrcBlock		      "DDC_In_Chan"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      3
+	      SrcBlock		      "DDC_In_Data"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      4
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      1
+	      DstBlock		      "DDC_Out_data"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      5
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      2
+	      DstBlock		      "DDC_Out_valid"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      6
+	      SrcBlock		      "PipeReg1"
+	      SrcPort		      3
+	      DstBlock		      "DDC_Out_Chan"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      19
+	      SrcBlock		      "HDDC"
+	      SrcPort		      1
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      20
+	      SrcBlock		      "HDDC"
+	      SrcPort		      2
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      21
+	      SrcBlock		      "HDDC"
+	      SrcPort		      3
+	      DstBlock		      "COMPLEX_MIXER1"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      22
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      1
+	      DstBlock		      "LDDC"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      23
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      2
+	      DstBlock		      "LDDC"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      24
+	      SrcBlock		      "COMPLEX_MIXER1"
+	      SrcPort		      3
+	      DstBlock		      "LDDC"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      13
+	      SrcBlock		      "LDDC"
+	      SrcPort		      1
+	      DstBlock		      "PipeReg1"
+	      DstPort		      1
+	    }
+	    Line {
+	      ZOrder		      14
+	      SrcBlock		      "LDDC"
+	      SrcPort		      2
+	      DstBlock		      "PipeReg1"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      15
+	      SrcBlock		      "LDDC"
+	      SrcPort		      3
+	      DstBlock		      "PipeReg1"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      16
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      2
+	      DstBlock		      "HDDC"
+	      DstPort		      2
+	    }
+	    Line {
+	      ZOrder		      17
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      3
+	      DstBlock		      "HDDC"
+	      DstPort		      3
+	    }
+	    Line {
+	      ZOrder		      18
+	      SrcBlock		      "PipeReg"
+	      SrcPort		      1
+	      DstBlock		      "HDDC"
+	      DstPort		      1
+	    }
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC1_out_data"
+	  SID			  "7518"
+	  Position		  [3160, 438, 3190, 452]
+	  ZOrder		  2012
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC1_out_valid"
+	  SID			  "7519"
+	  Position		  [3160, 528, 3190, 542]
+	  ZOrder		  2013
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "2"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC1_out_chan"
+	  SID			  "7520"
+	  Position		  [3160, 618, 3190, 632]
+	  ZOrder		  2014
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "3"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC2_out_data"
+	  SID			  "8245"
+	  Position		  [3160, 743, 3190, 757]
+	  ZOrder		  2225
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "4"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC2_out_valid"
+	  SID			  "8246"
+	  Position		  [3160, 833, 3190, 847]
+	  ZOrder		  2226
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "5"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC2_out_chan"
+	  SID			  "8247"
+	  Position		  [3160, 923, 3190, 937]
+	  ZOrder		  2227
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "6"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC3_out_data"
+	  SID			  "8263"
+	  Position		  [3160, 1048, 3190, 1062]
+	  ZOrder		  2232
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "7"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC3_out_valid"
+	  SID			  "8264"
+	  Position		  [3160, 1138, 3190, 1152]
+	  ZOrder		  2233
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "8"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC3_out_chan"
+	  SID			  "8265"
+	  Position		  [3160, 1228, 3190, 1242]
+	  ZOrder		  2234
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "9"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC4_out_data"
+	  SID			  "8281"
+	  Position		  [3160, 1353, 3190, 1367]
+	  ZOrder		  2239
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "10"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC4_out_valid"
+	  SID			  "8282"
+	  Position		  [3160, 1443, 3190, 1457]
+	  ZOrder		  2240
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "11"
+	  IconDisplay		  "Port number"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "DDC4_out_chan"
+	  SID			  "8283"
+	  Position		  [3160, 1533, 3190, 1547]
+	  ZOrder		  2241
+	  FontName		  "Sans Serif"
+	  FontSize		  12
+	  Port			  "12"
+	  IconDisplay		  "Port number"
+	}
+	Line {
+	  ZOrder		  1
+	  SrcBlock		  "dut_1r"
+	  SrcPort		  1
+	  DstBlock		  "DDC1_out_data"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  2
+	  SrcBlock		  "dut_1r"
+	  SrcPort		  2
+	  DstBlock		  "DDC1_out_valid"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  3
+	  SrcBlock		  "dut_1r"
+	  SrcPort		  3
+	  DstBlock		  "DDC1_out_chan"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  4
+	  SrcBlock		  "DDC1_in_data"
+	  SrcPort		  1
+	  DstBlock		  "dut_1r"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  5
+	  SrcBlock		  "DDC1_in_valid"
+	  SrcPort		  1
+	  DstBlock		  "dut_1r"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  6
+	  SrcBlock		  "DDC1_in_chan"
+	  SrcPort		  1
+	  DstBlock		  "dut_1r"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  123
+	  SrcBlock		  "dut_2r"
+	  SrcPort		  1
+	  DstBlock		  "DDC2_out_data"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  124
+	  SrcBlock		  "dut_2r"
+	  SrcPort		  2
+	  DstBlock		  "DDC2_out_valid"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  125
+	  SrcBlock		  "dut_2r"
+	  SrcPort		  3
+	  DstBlock		  "DDC2_out_chan"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  126
+	  SrcBlock		  "DDC2_in_data"
+	  SrcPort		  1
+	  DstBlock		  "dut_2r"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  127
+	  SrcBlock		  "DDC2_in_valid"
+	  SrcPort		  1
+	  DstBlock		  "dut_2r"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  128
+	  SrcBlock		  "DDC2_in_chan"
+	  SrcPort		  1
+	  DstBlock		  "dut_2r"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  129
+	  SrcBlock		  "dut_3r"
+	  SrcPort		  1
+	  DstBlock		  "DDC3_out_data"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  130
+	  SrcBlock		  "dut_3r"
+	  SrcPort		  2
+	  DstBlock		  "DDC3_out_valid"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  131
+	  SrcBlock		  "dut_3r"
+	  SrcPort		  3
+	  DstBlock		  "DDC3_out_chan"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  132
+	  SrcBlock		  "DDC3_in_data"
+	  SrcPort		  1
+	  DstBlock		  "dut_3r"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  133
+	  SrcBlock		  "DDC3_in_valid"
+	  SrcPort		  1
+	  DstBlock		  "dut_3r"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  134
+	  SrcBlock		  "DDC3_in_chan"
+	  SrcPort		  1
+	  DstBlock		  "dut_3r"
+	  DstPort		  3
+	}
+	Line {
+	  ZOrder		  135
+	  SrcBlock		  "dut_4r"
+	  SrcPort		  1
+	  DstBlock		  "DDC4_out_data"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  136
+	  SrcBlock		  "dut_4r"
+	  SrcPort		  2
+	  DstBlock		  "DDC4_out_valid"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  137
+	  SrcBlock		  "dut_4r"
+	  SrcPort		  3
+	  DstBlock		  "DDC4_out_chan"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  138
+	  SrcBlock		  "DDC4_in_data"
+	  SrcPort		  1
+	  DstBlock		  "dut_4r"
+	  DstPort		  1
+	}
+	Line {
+	  ZOrder		  139
+	  SrcBlock		  "DDC4_in_valid"
+	  SrcPort		  1
+	  DstBlock		  "dut_4r"
+	  DstPort		  2
+	}
+	Line {
+	  ZOrder		  140
+	  SrcBlock		  "DDC4_in_chan"
+	  SrcPort		  1
+	  DstBlock		  "dut_4r"
+	  DstPort		  3
+	}
+      }
+    }
+    Line {
+      ZOrder		      97
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      DstBlock		      "Data Type Conversion1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      169
+      SrcBlock		      "Repeating\nSequence\ndata"
+      SrcPort		      1
+      Points		      [564, 0]
+      Branch {
+	ZOrder			108
+	Points			[0, 240]
+	Branch {
+	  ZOrder		  137
+	  Points		  [0, 240]
+	  Branch {
+	    ZOrder		    136
+	    Points		    [0, 240]
+	    DstBlock		    "dut_8c4r"
+	    DstPort		    10
+	  }
+	  Branch {
+	    ZOrder		    111
+	    DstBlock		    "dut_8c4r"
+	    DstPort		    7
+	  }
+	}
+	Branch {
+	  ZOrder		  109
+	  DstBlock		  "dut_8c4r"
+	  DstPort		  4
+	}
+      }
+      Branch {
+	ZOrder			107
+	DstBlock		"dut_8c4r"
+	DstPort			1
+      }
+    }
+    Line {
+      ZOrder		      105
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      Points		      [523, 0]
+      Branch {
+	ZOrder			138
+	Points			[0, 240]
+	Branch {
+	  ZOrder		  134
+	  Points		  [0, 240]
+	  Branch {
+	    ZOrder		    133
+	    Points		    [0, 240]
+	    DstBlock		    "dut_8c4r"
+	    DstPort		    11
+	  }
+	  Branch {
+	    ZOrder		    121
+	    DstBlock		    "dut_8c4r"
+	    DstPort		    8
+	  }
+	}
+	Branch {
+	  ZOrder		  117
+	  DstBlock		  "dut_8c4r"
+	  DstPort		  5
+	}
+      }
+      Branch {
+	ZOrder			113
+	DstBlock		"dut_8c4r"
+	DstPort			2
+      }
+    }
+    Line {
+      ZOrder		      106
+      SrcBlock		      "Data Type Conversion1"
+      SrcPort		      1
+      Points		      [29, 0]
+      Branch {
+	ZOrder			140
+	Points			[0, 265; 1, 0]
+	Branch {
+	  ZOrder		  120
+	  Points		  [0, 215]
+	  Branch {
+	    ZOrder		    135
+	    Points		    [0, 240]
+	    DstBlock		    "dut_8c4r"
+	    DstPort		    12
+	  }
+	  Branch {
+	    ZOrder		    123
+	    DstBlock		    "dut_8c4r"
+	    DstPort		    9
+	  }
+	}
+	Branch {
+	  ZOrder		  119
+	  Points		  [0, -25]
+	  DstBlock		  "dut_8c4r"
+	  DstPort		  6
+	}
+      }
+      Branch {
+	ZOrder			115
+	DstBlock		"dut_8c4r"
+	DstPort			3
+      }
+    }
+    Line {
+      ZOrder		      141
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      1
+      DstBlock		      "Cplx2IQVec"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      142
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      2
+      DstBlock		      "Scope"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      143
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      3
+      DstBlock		      "Scope"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      144
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      4
+      DstBlock		      "Cplx2IQVec1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      145
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      5
+      DstBlock		      "Scope1"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      146
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      6
+      DstBlock		      "Scope1"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      147
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      7
+      DstBlock		      "Cplx2IQVec2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      148
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      8
+      DstBlock		      "Scope2"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      149
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      9
+      DstBlock		      "Scope2"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      150
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      10
+      DstBlock		      "Cplx2IQVec3"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      151
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      11
+      DstBlock		      "Scope3"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      152
+      SrcBlock		      "dut_8c4r"
+      SrcPort		      12
+      DstBlock		      "Scope3"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      202
+      SrcBlock		      "Cplx2IQVec"
+      SrcPort		      1
+      DstBlock		      "Scope"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      203
+      SrcBlock		      "Cplx2IQVec1"
+      SrcPort		      1
+      DstBlock		      "Scope1"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      204
+      SrcBlock		      "Cplx2IQVec2"
+      SrcPort		      1
+      DstBlock		      "Scope2"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      205
+      SrcBlock		      "Cplx2IQVec3"
+      SrcPort		      1
+      DstBlock		      "Scope3"
+      DstPort		      1
+    }
+    Annotation {
+      SID		      "8318"
+      Name		      " %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n %  \n % Copyright (c) 2017, BigCat Wir"
+      "eless Pvt Ltd\n % All rights reserved.\n % \n % Redistribution and use in source and binary forms, with or witho"
+      "ut\n % modification, are permitted provided that the following conditions are met:\n % \n %     * Redistribution"
+      "s of source code must retain the above copyright notice,\n %       this list of conditions and the following dis"
+      "claimer.\n %\n %     * Redistributions in binary form must reproduce the above copyright\n %       notice, this "
+      "list of conditions and the following disclaimer in the\n %       documentation and/or other materials provided w"
+      "ith the distribution.\n %\n %     * Neither the name of the copyright holder nor the names of its contributors\n"
+      " %       may be used to endorse or promote products derived from this software\n %       without specific prior "
+      "written permission.\n % \n % \n % \n % THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS \"AS "
+      "IS\"\n % AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\n % IMPLIED WARRANTIES OF MER"
+      "CHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE\n % DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR "
+      "CONTRIBUTORS BE LIABLE\n % FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL\n % DAMAGE"
+      "S (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR\n % SERVICES; LOSS OF USE, DATA, OR PROFITS"
+      "; OR BUSINESS INTERRUPTION) HOWEVER\n % CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABI"
+      "LITY,\n % OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE\n % OF THIS SOFTWARE, EV"
+      "EN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n % \n  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+      "%%%\n"
+      Position		      [496, 169, 1039, 583]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      on
+      FixedWidth	      on
+      HorizontalAlignment     "left"
+      VerticalAlignment	      "top"
+      ZOrder		      -1
+    }
+    Annotation {
+      SID		      "29"
+      Name		      "  \n                       UPLINK_8C4R                      \n                                     "
+      "    "
+      Position		      [1039, 209, 1938, 349]
+      InternalMargins	      [0, 0, 0, 0]
+      FixedHeight	      on
+      FixedWidth	      on
+      BackgroundColor	      "lightBlue"
+      DropShadow	      on
+      ZOrder		      -1
+      FontName		      "Sans Serif"
+      FontSize		      36
+    }
+  }
+}
